@@ -53,6 +53,12 @@ minusButton3.addEventListener("click", function(){
     counterDiv3.innerHTML = count3;
 });
 
+function add() {
+    count1++;
+    counterDiv.innerHTML = count1;
+    console.log(count1);
+}
+
 
 
 // nerd shi frfr
