@@ -9,7 +9,9 @@ body {
 hr {
   filter: opacity(50%) brightness(40%);
 }
-
+input[type=button] {
+  background-color:black;
+}
 .headerMain {
   text-align: center;
   font-weight: 900;
