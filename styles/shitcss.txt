@@ -25,10 +25,11 @@ button {
 
 table {
         margin: auto;
-        .header {
-                color: chartreuse;
-                font-size: 30px;
-        }
+}
+
+table .header {
+        color: chartreuse;
+        font-size: 30px;
 }
 
 tr,
