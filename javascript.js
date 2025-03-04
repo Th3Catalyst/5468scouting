@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let count2 = 0;
     let count3 = 0;
 
-    minusButton.addEventListener("click", function() {
+    minusButton.addEventListener("click", (event) => {
+        event.preventDefault();
         if (count1 > 0){
             count1--;
         }
