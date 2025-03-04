@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 body {
+  font-size: 1em;
   margin: 3px;
   color: rgb(235, 235, 235);
   background-color: rgb(28, 28, 28);
