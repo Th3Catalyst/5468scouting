@@ -1,41 +1,115 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <script src="javascript.js" defer></script>
-        <title>2025 Scouting Form</title>
-        <h1 class="header">5468 Scouting Form 2025</h1>
-    </head>
-    <body>
-        <h2 class="down2">Auto Phase</h2>
-        <br>
-        <br>
-        <h3 class="down">Did they leave?</h2>
-        <input type="checkbox" name="leaveY" id="leaveY" class="left">
-        <label for="leaveY" class="leftTxt">Yes</label>
-        <input type="checkbox" name="leaveN" id="leaveN" class="right">
-        <label for="leaveN" class="rightTxt">No</label>
-        <br>
-        <br>
-            <h3 class="l1label">L1</h3>
-            <div class="container">
-                <button id="minusL1" class="left">-1</button>
-                <div id="cvL1" class="center">0</div>
-                <button id="plusL1" class="right">+1</button>
-            </div>
+<head>
+    <title>2025 Scouting Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="container">
+        <div class="containerInner">
+            <h1 class="headerMain">5468 Scouting Form 2025</h1>
+            <hr>
+            <span class="autoPhaseHeader">Auto Phase</span>
             <br>
-            <h3 class="l2label">L2</h3>
-            <div class="container">
-                <button id="minusL2" class="left">-1</button>
-                <div id="cvL2" class="center">0</div>
-                <button id="plusL2" class="right">+1</button>
-            </div>
-            <br>
-            <h3 class="l3label">L3</h3>
-            <div class="container">
-                <button id="minusL3" class="left">-1</button>
-                <div id="cvL3" class="center">0</div>
-                <button id="plusL3" class="right">+1</button>
-            </div>
-            
-    </body>
+            <table class="tableNormal">
+                <tr>
+                    <th colspan="2">
+                        <span class="header">Did they leave?</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="leaveY" id="leaveY"> <label for="leaveY" class="leftTxt">Yes</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="leaveN" id="leaveN"> <label for="leaveN" class="rightTxt">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="noShow" colspan="2">
+                        <span style="filter: opacity(0%);">you sneaky goober</span> <!--midnight shenanigans (had to look this one up gang)-->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <strong>L1</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="minusL1" class="Jbutton">-1</button> <span id="cvL1" class="center">0</span> <button id="plusL1" class="Jbutton">+1</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="noShow" colspan="2">
+                        <span style="filter: opacity(0%);">hello, world!</span> <!--midnight shenanigans (had to look this one up gang)-->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <strong>L2</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="minusL2" class="Jbutton">-1</button> <span id="cvL2" class="center">0</span> <button id="plusL2" class="Jbutton">+1</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="noShow" colspan="2">
+                        <span style="filter: opacity(0%);">At Henry & Co., we like to take our work seriously</span> <!--midnight shenanigans (had to look this one up gang)-->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <strong>L3</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button id="minusL3" class="Jbutton">-1</button> <span id="cvL3" class="center">0</span> <button id="plusL3" class="Jbutton">+1</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+<!--                LEGACY CODE
+
+    <h2 class="down2">Auto Phase</h2>
+    <br>
+    <br>
+    <h3 class="down">Did they leave?</h2>
+    <input type="checkbox" name="leaveY" id="leaveY" class="left">
+    <label for="leaveY" class="leftTxt">Yes</label>
+    <input type="checkbox" name="leaveN" id="leaveN" class="right">
+    <label for="leaveN" class="rightTxt">No</label>
+    <br>
+    <br>
+        <h3 class="l1label">L1</h3>
+        <div class="container">
+            <button id="minusL1" class="left">-1</button>
+            <div id="cvL1" class="center">0</div>
+            <button id="plusL1" class="right">+1</button>
+        </div>
+        <br>
+        <h3 class="l2label">L2</h3>
+        <div class="container">
+            <button id="minusL2" class="left">-1</button>
+            <div id="cvL2" class="center">0</div>
+            <button id="plusL2" class="right">+1</button>
+        </div>
+        <br>
+        <h3 class="l3label">L3</h3>
+        <div class="container">
+            <button id="minusL3" class="left">-1</button>
+            <div id="cvL3" class="center">0</div>
+            <button id="plusL3" class="right">+1</button>
+        </div>  -->  
+</body>
 </html>
