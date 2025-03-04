@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log(count1);
     });
 
-    plusButton.addEventListener("click", function() {
+    plusButton.addEventListener("click", (event) => {
+        event.preventDefault();
         count1++;
         counterDiv.innerHTML = count1;
         console.log(count1);
