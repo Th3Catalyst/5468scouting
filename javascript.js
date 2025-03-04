@@ -29,36 +29,33 @@ plusButton.addEventListener("click", (event) => {
     console.log(count1);
 });
 
-plusButton2.addEventListener("click", function(){
+plusButton2.addEventListener("click", (event) => {
+    event.preventDefault();
     count2++;
     counterDiv2.innerHTML = count2;
 });
 
-minusButton2.addEventListener("click", function(){
+minusButton2.addEventListener("click", (event) => {
+    event.preventDefault();
     if (count2 > 0){
         count2--;
     }
     counterDiv2.innerHTML = count2;
 });
 
-plusButton3.addEventListener("click", function(){
+plusButton3.addEventListener("click", (event) => {
+    event.preventDefault();
     count3++;
     counterDiv3.innerHTML = count3
 });
 
-minusButton3.addEventListener("click", function(){
+minusButton3.addEventListener("click", (event) => {
+    event.preventDefault();
     if (count3 > 0){
         count3--;
     }
     counterDiv3.innerHTML = count3;
 });
-
-function add() {
-    count1++;
-    counterDiv.innerHTML = count1;
-    console.log(count1);
-}
-
 
 
 // nerd shi frfr
