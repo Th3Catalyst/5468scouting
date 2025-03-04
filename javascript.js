@@ -16,36 +16,36 @@ document.addEventListener("DOMContentLoaded", function() {
         if (count1 > 0){
             count1--;
         }
-        counterDiv.textContent = count1;
+        counterDiv.innerHTML = count1;
     });
 
     plusButton.addEventListener("click", function() {
         count1++;
-        counterDiv.textContent = count1;
+        counterDiv.innerHTML = count1;
     });
 
     plusButton2.addEventListener("click", function(){
         count2++;
-        counterDiv2.textContent = count2;
+        counterDiv2.innerHTML = count2;
     });
 
     minusButton2.addEventListener("click", function(){
         if (count2 > 0){
             count2--;
         }
-        counterDiv2.textContent = count2;
+        counterDiv2.innerHTML = count2;
     });
 
     plusButton3.addEventListener("click", function(){
         count3++;
-        counterDiv3.textContent = count3
+        counterDiv3.innerHTML = count3
     });
 
     minusButton3.addEventListener("click", function(){
         if (count3 > 0){
             count3--;
         }
-        counterDiv3.textContent = count3;
+        counterDiv3.innerHTML = count3;
     });
 
 });
