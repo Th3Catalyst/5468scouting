@@ -32,7 +32,7 @@ input[name="leave"]:checked {
   border: 3px solid rgb(28,28,28);
 
   /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-  outline: 1px solid #0e0a;
+  outline: 2px solid #0e0a;
 }
 input[name="leave"] {
   appearance: none;
@@ -42,13 +42,13 @@ input[name="leave"] {
   border-radius: 50%;
 
   /* The background will be the radio dot's color. */
-  background: rgb(28,28,28);
+  background: rgb(0,0,0);
 
   /* The border will be the spacing between the dot and the outer circle */
   border: 3px solid rgb(28,28,28);
 
   /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-  outline: 1px solid #0e0a;
+  outline: 2px solid #0e0a;
 }
 .headerMain {
   text-align: center;
