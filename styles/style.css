@@ -18,6 +18,22 @@ hr {
   padding-left: 5px;
   border-radius:2px;
 }
+input[name="leave"] {
+  appearance: none;
+  -webkit-appearance: none;
+
+  /* For a circular appearance we need a border-radius. */
+  border-radius: 50%;
+
+  /* The background will be the radio dot's color. */
+  background: #00ee0033;
+
+  /* The border will be the spacing between the dot and the outer circle */
+  border: 3px solid #FFF;
+
+  /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
+  box-shadow: 0 0 0 1px #0e0;
+}
 .headerMain {
   text-align: center;
   font-weight: 900;
