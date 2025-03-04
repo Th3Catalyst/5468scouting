@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", (event) => {
     const minusButton = document.getElementById("minusL1");
     const plusButton = document.getElementById("plusL1");
     const counterDiv = document.getElementById("cvL1");
