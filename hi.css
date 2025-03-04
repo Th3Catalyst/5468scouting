@@ -1,0 +1,56 @@
+.right{
+    position: absolute;
+    right: 45%;
+}
+.left{ 
+    position: absolute;
+    left: 45%;
+}
+.rightTxt{
+    position: absolute;
+    right: 45%;
+    bottom: 51.75%;
+    color: red;
+}
+.leftTxt{
+    position: absolute;
+    left: 45%;
+    bottom: 51.75%;
+    color: greenyellow;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-color: #332e37;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    margin: 10px;
+}
+.center {
+    width: 50px;
+    text-align: center;
+}
+p, h1, h2, h3, label, #cvl1, #cvl2, #cvl3{
+    color: chartreuse;
+}
+.down{
+    position: absolute;
+    bottom: 52.5%;
+}
+.down2{
+    position: absolute;
+    bottom: 60%;
+}
+.header{
+    position: absolute;
+    bottom: 70%;
+}
