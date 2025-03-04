@@ -17,11 +17,13 @@ document.addEventListener("DOMContentLoaded", function() {
             count1--;
         }
         counterDiv.innerHTML = count1;
+        console.log(count1);
     });
 
     plusButton.addEventListener("click", function() {
         count1++;
         counterDiv.innerHTML = count1;
+        console.log(count1);
     });
 
     plusButton2.addEventListener("click", function(){
