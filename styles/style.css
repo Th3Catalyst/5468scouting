@@ -29,10 +29,10 @@ input[name="leave"]:checked {
   background: #0e0;
 
   /* The border will be the spacing between the dot and the outer circle */
-  border: 3px solid rgb(28,78,28);
+  border: 3px solid rgb(28,28,28);
 
   /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-  outline: 1px solid #0e02;
+  outline: 1px solid #0e0a;
 }
 input[name="leave"] {
   appearance: none;
@@ -45,10 +45,10 @@ input[name="leave"] {
   background: rgb(28,28,28);
 
   /* The border will be the spacing between the dot and the outer circle */
-  border: 3px solid rgb(28,78,28);
+  border: 3px solid rgb(28,28,28);
 
   /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
-  outline: 1px solid #0e02;
+  outline: 1px solid #0e0a;
 }
 .headerMain {
   text-align: center;
