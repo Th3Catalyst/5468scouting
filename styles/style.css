@@ -22,34 +22,22 @@ hr {
 input[name="leave"]:checked {
   appearance: none;
   -webkit-appearance: none;
-
-  /* For a circular appearance we need a border-radius. */
-  border-radius: 50%;
-
-  /* The background will be the radio dot's color. */
+  border-radius: 50%
   background: #0e0;
-
-  /* The border will be the spacing between the dot and the outer circle */
   border: 3px solid rgb(28,28,28);
-
-  /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
   outline: 2px solid #0e0a;
 }
 input[name="leave"] {
   appearance: none;
   -webkit-appearance: none;
-
-  /* For a circular appearance we need a border-radius. */
   border-radius: 50%;
-
-  /* The background will be the radio dot's color. */
   background: rgb(0,0,0);
-
-  /* The border will be the spacing between the dot and the outer circle */
   border: 3px solid rgb(28,28,28);
-
-  /* And by creating a box-shadow with no offset and no blur, we have an outer circle */
   outline: 2px solid #0e0a;
+ 
+  /*THIS IS A SASS VARIABLE*/ 
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  
 }
 .headerMain {
   text-align: center;
