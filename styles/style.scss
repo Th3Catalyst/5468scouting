@@ -45,6 +45,7 @@ hr {
         background-color: rgb(20,20,20);
         box-shadow: -8px 0px 8px rgba(20,20,20,0.2), 8px 0px 24px rgba(20,20,20,0.2), 0px 8px 8px rgba(20,20,20,0.2), 0px -8px 24px rgba(20,20,20,0.2);
         width:50%;
+        font-size: 1.5em;
         th {    
                 background-color: rgb(24,24,24);
                 box-shadow: -8px 0px 8px rgba(24,24,24,0.2), 8px 0px 24px rgba(24,24,24,0.2), 0px 8px 8px rgba(24,24,24,0.2), 0px -8px 24px rgba(24,24,24,0.2);
@@ -76,10 +77,6 @@ hr {
                 transition: $animationTransition1;
                 border: 1px solid rgb(80,80,80);
                 cursor: default;
-        }
-        .Jbutton {
-                display: inline-block !important; // Ensure buttons are inline-block
-                margin: 0px 6px
         }
 }
 
@@ -113,19 +110,18 @@ input[type="radio"] {
         -webkit-appearance: none;
         border-radius: 50%;
         background: rgb(0,0,0);
-        border: 0px solid rgb(48,48,48);
-        outline: 2px solid #14c60030;
-        width: 1em;
-        height: 1em;
+        border: 0.3em solid rgb(28,28,28);
+        outline: 0.2em solid #14c60030;
+        width: 1.5em;
+        height: 1.5em;
         transition: $animationTransition1;
         cursor: pointer;
         &:hover {
-                outline: 2px solid #14c600a0;
+                outline: 0.2em solid #14c600a0;
         }
         &:checked {
                 background: #14c600;
-                border: 3px solid rgb(48,48,48);
-                outline: 2px solid #14c600a0;
+                outline: 0.2em solid #14c600a0;
         }
 
 }
@@ -134,10 +130,11 @@ input[type="radio"] {
         @include elementDefault;
         font-size: 1.2em;
         cursor:pointer;
-        margin:6px auto;
+        margin: 0.3em 0.7em;
         padding-right: 2.5em;
         padding-left: 2.5em;
         border-radius: 1.5em;
+        display: inline-block !important; // Ensure buttons are inline-block
 }
 
 .textInputNormal {
