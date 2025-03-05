@@ -108,7 +108,7 @@ hr {
 }
 
 
-input[name="leave"] {
+input[type="radio"] {
         appearance: none;
         -webkit-appearance: none;
         border-radius: 50%;
@@ -132,7 +132,7 @@ input[name="leave"] {
 .Jbutton {
         @include elementDefault;
         font-size: 1.2em;
-        
+        cursor:pointer;
         padding-right: 2.5em;
         padding-left: 2.5em;
         border-radius: 1.5em;
@@ -142,6 +142,7 @@ input[name="leave"] {
         @include elementDefault;
         width: 3em;
         border-radius: 0.5em;
+        cursor:text;
         &:focus {
                 outline:none;
         }

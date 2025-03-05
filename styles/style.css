@@ -84,7 +84,7 @@ hr {
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
 
-input[name=leave] {
+input[type=radio] {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
@@ -96,10 +96,10 @@ input[name=leave] {
   height: 1em;
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
-input[name=leave]:hover {
+input[type=radio]:hover {
   outline: 2px solid rgba(20, 198, 0, 0.6274509804);
 }
-input[name=leave]:checked {
+input[type=radio]:checked {
   background: #14c600;
   border: 3px solid rgb(48, 48, 48);
   outline: 2px solid rgba(20, 198, 0, 0.6274509804);
@@ -112,6 +112,7 @@ input[name=leave]:checked {
   padding: 0.5em;
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
   font-size: 1.2em;
+  cursor: pointer;
   padding-right: 2.5em;
   padding-left: 2.5em;
   border-radius: 1.5em;
@@ -129,6 +130,7 @@ input[name=leave]:checked {
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
   width: 3em;
   border-radius: 0.5em;
+  cursor: text;
 }
 .textInputNormal:hover {
   border-color: #14c600;
