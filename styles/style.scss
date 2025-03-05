@@ -44,6 +44,7 @@ hr {
         margin: 24px auto;
         background-color: rgb(20,20,20);
         box-shadow: -8px 0px 8px rgba(20,20,20,0.2), 8px 0px 24px rgba(20,20,20,0.2), 0px 8px 8px rgba(20,20,20,0.2), 0px -8px 24px rgba(20,20,20,0.2);
+        width:50%;
         th {    
                 background-color: rgb(24,24,24);
                 box-shadow: -8px 0px 8px rgba(24,24,24,0.2), 8px 0px 24px rgba(24,24,24,0.2), 0px 8px 8px rgba(24,24,24,0.2), 0px -8px 24px rgba(24,24,24,0.2);
@@ -152,6 +153,9 @@ input[name="leave"] {
 @media only screen and (max-width: 845px) {
         #container {
                 width: 100%;
+        }
+        .tableNormal {
+                width: 90%;
         }
         td {
                 min-width: 100px;
