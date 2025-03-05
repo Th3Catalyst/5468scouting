@@ -40,7 +40,7 @@ hr {
         font-size:3em;
 }
 
-.tableNormal { // copied from another web project that I, sir Henry Carl of Bend has made. other SASS/SCSS has been pasted as well
+.tableNormal { // copied from another web project that I, sir Henry Carl of Bend has made. some other SASS/SCSS has been pasted as well
         margin: 24px auto;
         background-color: rgb(20,20,20);
         box-shadow: -8px 0px 8px rgba(20,20,20,0.2), 8px 0px 24px rgba(20,20,20,0.2), 0px 8px 8px rgba(20,20,20,0.2), 0px -8px 24px rgba(20,20,20,0.2);
@@ -118,6 +118,7 @@ input[type="radio"] {
         width: 1em;
         height: 1em;
         transition: $animationTransition1;
+        cursor: pointer;
         &:hover {
                 outline: 2px solid #14c600a0;
         }
@@ -133,6 +134,7 @@ input[type="radio"] {
         @include elementDefault;
         font-size: 1.2em;
         cursor:pointer;
+        margin:6px auto;
         padding-right: 2.5em;
         padding-left: 2.5em;
         border-radius: 1.5em;
