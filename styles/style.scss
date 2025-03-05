@@ -99,6 +99,25 @@ hr {
         transition: $animationTransition1;
 }
 
+input[name="leave"]:checked {
+        appearance: none;
+        -webkit-appearance: none;
+        border-radius: 50%;
+        background: #0e0;
+        border: 3px solid rgb(28,28,28);
+        outline: 2px solid #0e0a;
+}
+input[name="leave"] {
+        appearance: none;
+        -webkit-appearance: none;
+        border-radius: 50%;
+        background: rgb(0,0,0);
+        border: 3px solid rgb(28,28,28);
+        outline: 2px solid #0e0a;
+
+        transition: $animationTransition1;
+
+}
 
 @media only screen and (max-width: 1100px) {
         #container {
