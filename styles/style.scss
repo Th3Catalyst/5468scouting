@@ -112,9 +112,10 @@ input[name="leave"] {
         -webkit-appearance: none;
         border-radius: 50%;
         background: rgb(0,0,0);
-        border: 3px solid rgb(28,28,28);
+        border: 0px solid rgb(28,28,28);
         outline: 2px solid #0e0a;
         width: 1em;
+        height: 1em;
         transition: $animationTransition1;
 
 }

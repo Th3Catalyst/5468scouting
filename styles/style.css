@@ -101,9 +101,10 @@ input[name=leave] {
   -webkit-appearance: none;
   border-radius: 50%;
   background: rgb(0, 0, 0);
-  border: 3px solid rgb(28, 28, 28);
+  border: 0px solid rgb(28, 28, 28);
   outline: 2px solid rgba(0, 238, 0, 0.6666666667);
   width: 1em;
+  height: 1em;
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
 
