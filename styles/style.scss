@@ -20,7 +20,7 @@ hr {
 }
 
 @mixin header {
-        font-size: 900px;
+        font-weight: 900;
 }
 
 .headerMain {
@@ -114,7 +114,7 @@ input[name="leave"] {
         background: rgb(0,0,0);
         border: 3px solid rgb(28,28,28);
         outline: 2px solid #0e0a;
-
+        width: 1em;
         transition: $animationTransition1;
 
 }
