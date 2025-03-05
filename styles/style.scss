@@ -110,10 +110,10 @@ input[name="leave"] {
         width: 1em;
         height: 1em;
         transition: $animationTransition1;
-        :hover {
+        &:hover {
                 outline: 2px solid #0e0a;
         }
-        :checked {
+        &:checked {
                 background: #0e0;
                 border: 3px solid rgb(48,48,48);
                 outline: 2px solid #0e0a;
@@ -132,7 +132,7 @@ input[name="leave"] {
         border-radius: 1.5em;
         
         transition: $animationTransition1; 
-        :hover {
+        &:hover {
                 border-color: #0e0;
                 color:#0e0;
         }

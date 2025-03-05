@@ -97,10 +97,10 @@ input[name=leave] {
   height: 1em;
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
-input[name=leave] :hover {
+input[name=leave]:hover {
   outline: 2px solid rgba(0, 238, 0, 0.6666666667);
 }
-input[name=leave] :checked {
+input[name=leave]:checked {
   background: #0e0;
   border: 3px solid rgb(48, 48, 48);
   outline: 2px solid rgba(0, 238, 0, 0.6666666667);
@@ -117,7 +117,7 @@ input[name=leave] :checked {
   border-radius: 1.5em;
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 }
-.Jbutton :hover {
+.Jbutton:hover {
   border-color: #0e0;
   color: #0e0;
 }
