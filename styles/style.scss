@@ -21,13 +21,12 @@ hr {
 
 @mixin header {
         text-align: center;
-        margin: auto;
         text-shadow: 2px 2px 8px rgba(61, 61, 61, 0.5), -2px 2px 8px rgba(61, 61, 61, 0.5), 2px -2px 8px rgba(61, 61, 61, 0.5), -2px -2px 8px rgba(61, 61, 61, 0.5);
 }
 
 .headerMain {
         @include header;
-        font-size:5em;
+        font-size:3em;
 }
 
 .tableNormal { // copied from another web project that I, sir Henry Carl of Bend has made. other SASS/SCSS has been pasted as well
