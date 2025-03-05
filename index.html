@@ -5,70 +5,111 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <div id="container">
         <div class="containerInner">
             <h1 class="headerMain">5468 Scouting Form 2025</h1>
             <hr>
-            <span class="autoPhaseHeader">Auto Phase</span>
-            <br>
             <table class="tableNormal">
                 <tr>
-                    <th colspan="2">
-                        <span class="header">Did they leave?</span>
+                    <th>
+                        <span class="header">Match #</span> 
+                    </th>
+                    <th>
+                        <span class="header">Team #</span> 
                     </th>
                 </tr>
                 <tr>
                     <td>
-                        <input type="checkbox" name="leaveY" id="leaveY"> <label for="leaveY" class="leftTxt">Yes</label>
+                        <input type="text" class="textInputNormal" id="matchNum">
                     </td>
                     <td>
-                        <input type="checkbox" name="leaveN" id="leaveN"> <label for="leaveN" class="rightTxt">No</label>
+                        <input type="text" class="textInputNormal" id="team" value="5468">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <h2 class="autoPhaseHeader">Auto Phase</h2>
+            <br>
+            <table class="tableNormal">
+                <tr>
+                    <th colspan="6">
+                        <span class="header">Starting Position</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="radio" name="startPos" id="startL"> <label for="startL" class="leftTxt">Left</label>
+                    </td>
+                    <td colspan="2">
+                        <input type="radio" name="startPos" id="startC"> <label for="startC" class="leftTxt">Center</label>
+                    </td>
+                    <td colspan="2">
+                        <input type="radio" name="startPos" id="startR"> <label for="startR" class="rightTxt">Right</label>
                     </td>
                 </tr>
                 <tr>
-                    <td class="noShow" colspan="2">
+                    <td class="noShow" colspan="6">
                         <span style="filter: opacity(0%);">you sneaky goober</span> <!--midnight shenanigans (had to look this one up gang)-->
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <th colspan="6">
+                        <span class="header">Did robot leave starting position?</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="radio" name="leave" id="leaveY"> <label for="leaveY" class="leftTxt">Yes</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="radio" name="leave" id="leaveN"> <label for="leaveN" class="rightTxt">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="noShow" colspan="6">
+                        <span style="filter: opacity(0%);">you sneaky goober</span> <!--midnight shenanigans (had to look this one up gang)-->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
                         <strong>L1</strong>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="6">
                         <button id="minusL1" class="Jbutton">-1</button> <span id="cvL1" class="center">0</span> <button id="plusL1" class="Jbutton">+1</button>
                     </td>
                 </tr>
                 <tr>
-                    <td class="noShow" colspan="2">
+                    <td class="noShow" colspan="6">
                         <span style="filter: opacity(0%);">hello, world!</span> <!--midnight shenanigans (had to look this one up gang)-->
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="6">
                         <strong>L2</strong>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="6">
                         <button id="minusL2" class="Jbutton">-1</button> <span id="cvL2" class="center">0</span> <button id="plusL2" class="Jbutton">+1</button>
                     </td>
                 </tr>
                 <tr>
-                    <td class="noShow" colspan="2">
-                        <span style="filter: opacity(0%);">At Henry & Co., we like to take our work seriously</span> <!--midnight shenanigans (had to look this one up gang)-->
+                    <td class="noShow" colspan="6">
+                        <span style="filter: opacity(0%);"> we like to take our work seriously</span> <!--midnight shenanigans (had to look this one up gang)-->
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="6">
                         <strong>L3</strong>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="6">
                         <button id="minusL3" class="Jbutton">-1</button> <span id="cvL3" class="center">0</span> <button id="plusL3" class="Jbutton">+1</button>
                     </td>
                 </tr>
