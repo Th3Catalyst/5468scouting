@@ -42,7 +42,6 @@ hr {
         padding: 0.5em;
         transition: $animationTransition1; 
         &:hover {
-                filter: $filterMain;
                 border-color: #14c600;
                 color:#14c600;
         }
@@ -148,6 +147,7 @@ input[type="radio"] {
         display: inline-block !important; // Ensure buttons are inline-block
 }
 
+
 .textInputNormal {
         @include elementDefault;
         display: inline-block;
@@ -155,10 +155,13 @@ input[type="radio"] {
         border-radius: 0.5em;
         cursor:text;
         font-size: 1.5em;
+        overflow-y: hidden;
+        overflow-x: scroll;
         &:focus {
                 outline:none;
         }
 }
+
 
 .desktop {
         display:block;

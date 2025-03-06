@@ -125,7 +125,6 @@ input[type=radio]:checked {
   display: inline-block !important;
 }
 .Jbutton:hover {
-  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
   border-color: #14c600;
   color: #14c600;
 }
@@ -141,9 +140,10 @@ input[type=radio]:checked {
   border-radius: 0.5em;
   cursor: text;
   font-size: 1.5em;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 .textInputNormal:hover {
-  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
   border-color: #14c600;
   color: #14c600;
 }
