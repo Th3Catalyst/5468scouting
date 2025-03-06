@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
 
-    //DESKTOP INCREMENTS
+    //DESKTOP INCREMENTS CORAL
     const minusButton = document.getElementById("minusL1");
     const plusButton = document.getElementById("plusL1");
     const counterDiv = document.getElementById("cvL1");
@@ -159,6 +159,130 @@ document.addEventListener("DOMContentLoaded", (event) => {
             count4M--;
         }
         counterDiv4M.innerHTML = count4M;
+    });
+
+
+
+    //DESKTOP INCREMENTS CORAL
+    const minusButtonN = document.getElementById("minusN");
+    const plusButtonN = document.getElementById("plusN");
+    const counterDivN = document.getElementById("cvN");
+
+    const minusButtonS = document.getElementById("minusS");
+    const plusButtonS = document.getElementById("plusS");
+    const counterDivS = document.getElementById("cvS");
+
+    const minusButtonP = document.getElementById("minusP");
+    const plusButtonP = document.getElementById("plusP");
+    const counterDivP = document.getElementById("cvP");
+
+    let countN = 0;
+    let countS = 0;
+    let countP = 0;
+    
+    minusButtonN.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (countN > 0){
+            countN--;
+        }
+        counterDivN.innerHTML = countN;
+        console.log(countN);
+    });
+    
+    plusButtonN.addEventListener("click", (event) => {
+        event.preventDefault();
+        countN++;
+        counterDivN.innerHTML = countN;
+        console.log(countN);
+    });
+    
+    plusButtonS.addEventListener("click", (event) => {
+        event.preventDefault();
+        countS++;
+        counterDivS.innerHTML = countS;
+    });
+    
+    minusButtonS.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (countS > 0){
+            countS--;
+        }
+        counterDivS.innerHTML = countS;
+    });
+    
+    plusButtonP.addEventListener("click", (event) => {
+        event.preventDefault();
+        countP++;
+        counterDivP.innerHTML = countP
+    });
+    
+    minusButtonP.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (countP > 0){
+            countP--;
+        }
+        counterDivP.innerHTML = countP;
+    });
+
+    //MOBILE INCREMENTS
+    const minusButtonNM = document.getElementById("minusNM");
+    const plusButtonNM = document.getElementById("plusNM");
+    const counterDivNM = document.getElementById("cvNM");
+
+    const minusButtonSM = document.getElementById("minusSM");
+    const plusButtonSM = document.getElementById("plusSM");
+    const counterDivSM = document.getElementById("cvSM");
+
+    const minusButtonPM = document.getElementById("minusPM");
+    const plusButtonPM = document.getElementById("plusPM");
+    const counterDivPM = document.getElementById("cvPM");
+
+    let countNM = 0;
+    let countSM = 0;
+    let countPM = 0;
+    
+    minusButtonNM.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (countNM > 0){
+            countNM--;
+        }
+        counterDivNM.innerHTML = countNM;
+        console.log(countNM);
+    });
+    
+    plusButtonNM.addEventListener("click", (event) => {
+        event.preventDefault();
+        countNM++;
+        counterDivNM.innerHTML = countNM;
+        console.log(countNM);
+    });
+    
+    plusButtonSM.addEventListener("click", (event) => {
+        event.preventDefault();
+        countSM++;
+        counterDivSM.innerHTML = countSM;
+    });
+    
+    minusButtonSM.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (countSM > 0){
+            countSM--;
+        }
+        counterDivSM.innerHTML = countSM;
+    });
+    
+    plusButtonPM.addEventListener("click", (event) => {
+        event.preventDefault();
+        countPM++;
+        counterDivPM.innerHTML = countPM;
+    });
+    
+    minusButtonPM.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (countPM > 0){
+            countPM--;
+        }
+        counterDivPM.innerHTML = countPM;
     });
 
 
