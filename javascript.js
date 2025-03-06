@@ -286,6 +286,7 @@ document.addEventListener("DOMContentLoaded", function() {
             startPos: startPos ? startPos.value : null,
             leavePos: leavePos ? leavePos.value : null
         };
+        //i love apis
 
         fetch('https://script.google.com/macros/s/AKfycbyPSe-W_P7L_kZySGTDyJUW11isKVhZVOGlMDivYu9wivm77LtcyWL0YKrl9LrTM8p-Jg/exec', {
             method: 'POST',
