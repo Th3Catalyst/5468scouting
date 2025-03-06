@@ -42,6 +42,7 @@ hr {
         padding: 0.5em;
         transition: $animationTransition1; 
         &:hover {
+                filter: $filterMain;
                 border-color: #14c600;
                 color:#14c600;
         }
@@ -54,7 +55,6 @@ hr {
 
 .tableNormal { // copied from another web project that I, sir Henry Carl of Bend has made. some other SASS/SCSS has been pasted as well
         margin: 24px auto;
-        //border:0.3em solid #14c600;
         background-color: rgb(20,20,20);
         box-shadow: -8px 0px 8px rgba(20,20,20,0.2), 8px 0px 24px rgba(20,20,20,0.2), 0px 8px 8px rgba(20,20,20,0.2), 0px -8px 24px rgba(20,20,20,0.2);
         width:50%;
@@ -170,35 +170,27 @@ input[type="radio"] {
         pointer-events: none;
 }
 
-.BL { // i was gonna change these names because they are very bad but i just tried and im not doing ts
+
+.BL {
         border-left: 0.25em solid #14c600 !important;
 }
 
-.BL:hover {
-        filter: $filterMain;
-}
 
 .BR {
         border-right: 0.25em solid #14c600 !important;
 }
 
-.BR:hover {
-        filter: $filterMain;
-}
 
 .BB {
         border-bottom: 0.25em solid #14c600 !important;
 }
 
-.BB:hover {
-        filter: $filterMain;
-}
 
 .BT {
         border-top: 0.25em solid #14c600 !important;  
 }
 
-.BT:hover {
+:is(.BL,.BR,.BB,.BT):hover {
         filter: $filterMain;
 }
 

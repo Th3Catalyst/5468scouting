@@ -125,6 +125,7 @@ input[type=radio]:checked {
   display: inline-block !important;
 }
 .Jbutton:hover {
+  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
   border-color: #14c600;
   color: #14c600;
 }
@@ -142,6 +143,7 @@ input[type=radio]:checked {
   font-size: 1.5em;
 }
 .textInputNormal:hover {
+  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
   border-color: #14c600;
   color: #14c600;
 }
@@ -163,31 +165,19 @@ input[type=radio]:checked {
   border-left: 0.25em solid #14c600 !important;
 }
 
-.BL:hover {
-  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
-}
-
 .BR {
   border-right: 0.25em solid #14c600 !important;
-}
-
-.BR:hover {
-  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
 }
 
 .BB {
   border-bottom: 0.25em solid #14c600 !important;
 }
 
-.BB:hover {
-  filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
-}
-
 .BT {
   border-top: 0.25em solid #14c600 !important;
 }
 
-.BT:hover {
+:is(.BL, .BR, .BB, .BT):hover {
   filter: brightness(115%) saturate(110%) hue-rotate(-15deg);
 }
 
