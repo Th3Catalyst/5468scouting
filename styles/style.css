@@ -111,9 +111,7 @@ input[type=radio]:checked {
   font-size: 1.2em;
   cursor: pointer;
   margin: 0.3em 0.7em;
-  padding-right: 2.5em;
-  padding-left: 2.5em;
-  border-radius: 1.5em;
+  border-radius: 0.5em;
   display: inline-block !important;
 }
 .Jbutton:hover {
@@ -127,6 +125,7 @@ input[type=radio]:checked {
   color: white;
   padding: 0.5em;
   transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  display: inline-block;
   width: 3em;
   border-radius: 0.5em;
   cursor: text;
@@ -139,6 +138,16 @@ input[type=radio]:checked {
   outline: none;
 }
 
+.desktop {
+  display: block;
+  pointer-events: all;
+}
+
+.mobile {
+  display: none !important;
+  pointer-events: none;
+}
+
 @media only screen and (max-width: 1100px) {
   #container {
     width: 100%;
@@ -146,13 +155,23 @@ input[type=radio]:checked {
 }
 @media only screen and (max-width: 845px) {
   #container {
-    width: 100%;
+    width: 100vw;
   }
   .tableNormal {
-    width: 90%;
+    width: 90vw;
   }
-  td {
-    min-width: 100px;
+  .tableNormal td, .tableNormal th {
+    min-width: 20px !important;
+    max-width: 50vw;
+    font-size: 0.75em !important;
+  }
+  .mobile {
+    display: block !important;
+    pointer-events: all !important;
+  }
+  .desktop {
+    display: none !important;
+    pointer-events: none !important;
   }
   .tableText {
     margin: 2px !important;

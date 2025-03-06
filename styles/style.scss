@@ -131,14 +131,13 @@ input[type="radio"] {
         font-size: 1.2em;
         cursor:pointer;
         margin: 0.3em 0.7em;
-        padding-right: 2.5em;
-        padding-left: 2.5em;
-        border-radius: 1.5em;
+        border-radius: 0.5em;
         display: inline-block !important; // Ensure buttons are inline-block
 }
 
 .textInputNormal {
         @include elementDefault;
+        display: inline-block;
         width: 3em;
         border-radius: 0.5em;
         cursor:text;
@@ -147,21 +146,43 @@ input[type="radio"] {
         }
 }
 
+
+.desktop {
+        display:block;
+        pointer-events: all;
+}
+.mobile {
+        display: none !important;
+        pointer-events: none;
+}
+
+
 @media only screen and (max-width: 1100px) {
         #container {
                 width: 100%;
         }
+        
 }
     
 @media only screen and (max-width: 845px) {
         #container {
-                width: 100%;
+                width: 100vw;
         }
         .tableNormal {
-                width: 90%;
+                width:90vw;
+                td, th {
+                        min-width: 20px !important;
+                        max-width:50vw;
+                        font-size: 0.75em !important;
+                }
         }
-        td {
-                min-width: 100px;
+        .mobile {
+                display:block !important;
+                pointer-events: all !important;
+        }
+        .desktop {
+                display: none !important;
+                pointer-events: none !important;
         }
         .tableText {
                 margin: 2px !important;
