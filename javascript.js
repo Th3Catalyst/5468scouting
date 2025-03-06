@@ -287,7 +287,7 @@ document.addEventListener("DOMContentLoaded", function() {
             leavePos: leavePos ? leavePos.value : null
         };
 
-        fetch('https://script.google.com/macros/s/AKfycbx_4KJ1zPZAl2qBSAZgONGSuyFdGIIu7shNs5pkND7QbH80d8TDhYEatkPCoNALLdDaLA/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbyPSe-W_P7L_kZySGTDyJUW11isKVhZVOGlMDivYu9wivm77LtcyWL0YKrl9LrTM8p-Jg/exec', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
