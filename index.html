@@ -23,10 +23,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="text" class="textInputNormal" id="matchNum">
+                        <input type="number" class="textInputNormal" id="matchNum">
                     </td>
                     <td>
-                        <input type="text" class="textInputNormal" id="team" value="5468">
+                        <input type="number" class="textInputNormal" id="team" value="5468">
                     </td>
                 </tr>
             </table>
@@ -69,16 +69,21 @@
             <div class="desktop">
                 <table class="tableNormal">
                     <tr>
-                        <td colspan="3" class="BR">
+                        <th colspan="12" class="BB">
+                            <span class="header">Coral</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="BR BT">
                             <span class="header">L1</span>
                         </td>
-                        <td colspan="3" class="BR BL">
+                        <td colspan="3" class="BR BL BT">
                             <span class="header">L2</span>
                         </td>
-                        <td colspan="3" class="BR BL">
+                        <td colspan="3" class="BR BL BT">
                             <span class="header">L3</span>
                         </td>
-                        <td colspan="3" class="BL">
+                        <td colspan="3" class="BL BT">
                             <span class="header">L4</span>
                         </td>
                     </tr>
@@ -128,6 +133,11 @@
             </div>
             <div class="mobile">
                 <table class="tableNormal">
+                    <tr>
+                        <th colspan="6" class="BB">
+                            <span class="header">Coral</span>
+                        </th>
+                    </tr>
                     <tr>
                         <td colspan="3" class="BR">
                             <strong>L1</strong>
@@ -195,7 +205,126 @@
                             <button id="minusL4M" class="Jbutton">-1</button>
                         </td>
                 </table>
-            </div>
+        </div>
+
+        <!-- ALGAE -->
+        <br>
+        <div class="desktop">
+            <table class="tableNormal">
+                <tr>
+                    <th colspan="12" class="BB">
+                        <span class="header">Algae</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="3" class="BR BT">
+                        <span class="header">Net</span>
+                    </td>
+                    <td colspan="3" class="BR BL BT">
+                        <span class="header">Scrub</span>
+                    </td>
+                    <td colspan="3" class="BL BT">
+                        <span class="header">Processor</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="BR">
+                        <button id="plusN" class="Jbutton">+1</button>
+                    </td>
+                    <td colspan="3" class="BR BL">
+                        <button id="plusS" class="Jbutton">+1</button>
+                    </td>
+                    <td colspan="3" class="BL">
+                        <button id="plusP" class="Jbutton">+1</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="BR">
+                        <span id="cvN" class="center">0</span>
+                    </td>
+                    <td colspan="3" class="BL BR">
+                        <span id="cvS" class="center">0</span>
+                    </td>
+                    <td colspan="3" class="BL">
+                        <span id="cvP" class="center">0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="BR">
+                        <button id="minusN" class="Jbutton">-1</button>
+                    </td>
+                    <td colspan="3" class="BL BR">
+                        <button id="minusS" class="Jbutton">-1</button>
+                    </td>
+                    <td colspan="3" class="BL">
+                        <button id="minusP" class="Jbutton">-1</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="mobile">
+            <table class="tableNormal">
+                <tr>
+                    <th colspan="6" class="BB">
+                        <span class="header">Algae</span>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="3" class="BR">
+                        <strong>Net</strong>
+                    </td>
+                    <td colspan="3" class="BL">
+                        <strong>Scrub</strong>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="3" class="BR">
+                        <button id="plusNM" class="Jbutton">+1</button>
+                    </td>
+                    <td colspan="3" class="BL">
+                        <button id="plusSM" class="Jbutton">+1</button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="3" class="BR">
+                        <span id="cvNM" class="center">0</span>
+                    </td>
+                    <td colspan="3" class="BL">
+                        <span id="cvSM" class="center">0</span>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="3" class="BR BB">
+                        <button id="minusNM" class="Jbutton">-1</button>
+                    </td>
+                    <td colspan="3" class="BL BB">
+                        <button id="minusSM" class="Jbutton">-1</button>
+                    </td>    
+                </tr>
+                <tr>
+                    <td colspan="6" class="BT">
+                        <strong>Processor</strong>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <button id="plusPM" class="Jbutton">+1</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <span id="cvPM" class="center">0</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <button id="minusPM" class="Jbutton">-1</button>
+                    </td>
+            </table>
         </div>
     </div>
 
