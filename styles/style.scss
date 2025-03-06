@@ -56,7 +56,7 @@ hr {
         margin: 24px auto;
         background-color: rgb(20,20,20);
         box-shadow: -8px 0px 8px rgba(20,20,20,0.2), 8px 0px 24px rgba(20,20,20,0.2), 0px 8px 8px rgba(20,20,20,0.2), 0px -8px 24px rgba(20,20,20,0.2);
-        width:50%;
+        width: 50%;
         font-size: 1.5em;
         th {    
                 background-color: rgb(24,24,24);
@@ -141,7 +141,7 @@ input[type="radio"] {
 .Jbutton {
         @include elementDefault;
         font-size: 1.2em;
-        cursor:pointer;
+        cursor: pointer;
         margin: 0.3em 0.7em;
         border-radius: 0.5em;
         display: inline-block !important; // Ensure buttons are inline-block
@@ -153,18 +153,18 @@ input[type="radio"] {
         display: inline-block;
         width: 3em;
         border-radius: 0.5em;
-        cursor:text;
+        cursor: text;
         font-size: 1.5em;
         overflow-y: hidden;
         overflow-x: scroll;
         &:focus {
-                outline:none;
+                outline: none;
         }
 }
 
 
 .desktop {
-        display:block;
+        display: block;
         pointer-events: all;
 }
 
@@ -222,12 +222,12 @@ input[type="radio"] {
                 width: 90vw;
                 td, th {
                         min-width: 20px !important;
-                        max-width:50vw;
+                        max-width: 50vw;
                         font-size: 0.75em !important;
                 }
         }
         .mobile {
-                display:block !important;
+                display: block !important;
                 pointer-events: all !important;
         }
         .desktop {
