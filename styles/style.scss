@@ -42,6 +42,7 @@ hr {
 
 .tableNormal { // copied from another web project that I, sir Henry Carl of Bend has made. some other SASS/SCSS has been pasted as well
         margin: 24px auto;
+        border:0.3em solid #14c600;
         background-color: rgb(20,20,20);
         box-shadow: -8px 0px 8px rgba(20,20,20,0.2), 8px 0px 24px rgba(20,20,20,0.2), 0px 8px 8px rgba(20,20,20,0.2), 0px -8px 24px rgba(20,20,20,0.2);
         width:50%;
@@ -141,6 +142,7 @@ input[type="radio"] {
         width: 3em;
         border-radius: 0.5em;
         cursor:text;
+        font-size: 1.5em;
         &:focus {
                 outline:none;
         }
@@ -156,6 +158,18 @@ input[type="radio"] {
         pointer-events: none;
 }
 
+.BL {
+        border-left:0.25em solid #14c600 !important;
+}
+.BR {
+        border-right:0.25em solid #14c600 !important;
+}
+.BB {
+        border-bottom:0.25em solid #14c600 !important;
+}
+.BT {
+        border-top:0.25em solid #14c600 !important;  
+}
 
 @media only screen and (max-width: 1100px) {
         #container {
