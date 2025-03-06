@@ -1,7 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-    event.preventDefault();
-
-    //DESKTOP INCREMENTS CORAL
+document.addEventListener("DOMContentLoaded", function() {
     const minusButton = document.getElementById("minusL1");
     const plusButton = document.getElementById("plusL1");
     const counterDiv = document.getElementById("cvL1");
@@ -18,67 +15,92 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const plusButton4 = document.getElementById("plusL4");
     const counterDiv4 = document.getElementById("cvL4");
 
+    const checkbox1 = document.getElementById("checkbox1");
+    const checkbox2 = document.getElementById("checkbox2");
+    const checkbox3 = document.getElementById("checkbox3");
+    const checkbox4 = document.getElementById("checkbox4");
+
+    const submitButton = document.getElementById("submit");
+
     let count1 = 0;
     let count2 = 0;
     let count3 = 0;
     let count4 = 0;
-    
-    minusButton.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (count1 > 0){
+
+    minusButton.addEventListener("click", function() {
+        if (count1 > 0) {
             count1--;
         }
-        counterDiv.innerHTML = count1;
-        console.log(count1);
-    });
-    
-    plusButton.addEventListener("click", (event) => {
-        event.preventDefault();
-        count1++;
-        counterDiv.innerHTML = count1;
-        console.log(count1);
-    });
-    
-    plusButton2.addEventListener("click", (event) => {
-        event.preventDefault();
-        count2++;
-        counterDiv2.innerHTML = count2;
-    });
-    
-    minusButton2.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (count2 > 0){
-            count2--;
-        }
-        counterDiv2.innerHTML = count2;
-    });
-    
-    plusButton3.addEventListener("click", (event) => {
-        event.preventDefault();
-        count3++;
-        counterDiv3.innerHTML = count3
-    });
-    
-    minusButton3.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (count3 > 0){
-            count3--;
-        }
-        counterDiv3.innerHTML = count3;
+        counterDiv.textContent = count1;
     });
 
-    plusButton4.addEventListener("click", (event) => {
-        event.preventDefault();
-        count4++;
-        counterDiv4.innerHTML = count4
+    plusButton.addEventListener("click", function() {
+        count1++;
+        counterDiv.textContent = count1;
     });
-    
-    minusButton4.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (count4 > 0){
+
+    minusButton2.addEventListener("click", function() {
+        if (count2 > 0) {
+            count2--;
+        }
+        counterDiv2.textContent = count2;
+    });
+
+    plusButton2.addEventListener("click", function() {
+        count2++;
+        counterDiv2.textContent = count2;
+    });
+
+    minusButton3.addEventListener("click", function() {
+        if (count3 > 0) {
+            count3--;
+        }
+        counterDiv3.textContent = count3;
+    });
+
+    plusButton3.addEventListener("click", function() {
+        count3++;
+        counterDiv3.textContent = count3;
+    });
+
+    minusButton4.addEventListener("click", function() {
+        if (count4 > 0) {
             count4--;
         }
-        counterDiv4.innerHTML = count4;
+        counterDiv4.textContent = count4;
+    });
+
+    plusButton4.addEventListener("click", function() {
+        count4++;
+        counterDiv4.textContent = count4;
+    });
+
+    submitButton.addEventListener("click", function() {
+        const data = {
+            counter1: count1,
+            counter2: count2,
+            counter3: count3,
+            counter4: count4,
+            checkbox1: checkbox1.checked,
+            checkbox2: checkbox2.checked,
+            checkbox3: checkbox3.checked,
+            checkbox4: checkbox4.checked
+        };
+
+        fetch('https://script.google.com/macros/s/AKfycbx_4KJ1zPZAl2qBSAZgONGSuyFdGIIu7shNs5pkND7QbH80d8TDhYEatkPCoNALLdDaLA/exec', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
     });
 
     //MOBILE INCREMENTS
@@ -284,8 +306,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
         counterDivPM.innerHTML = countPM;
     });
-
-
 });
-
-// nerd shi frfr
