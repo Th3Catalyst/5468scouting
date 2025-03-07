@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function() {
         };
         //i love apis
         //NO TOUCHIES UR GONNA MESS IT UP
-        fetch('https://script.google.com/macros/s/AKfycbwzmnWC50BDLvRv7LJufgSnd6GN-6pVpqD-SQJsQQO1vuxHCMWUHYiWQaREOhZSTYxI0w/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbycna0iGnMKm0HV-dVr9r7DN_qORMNcTkjMmuUtoUUYpuy6SdV4EtVAae_xAtbXzwNquw/exec', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
