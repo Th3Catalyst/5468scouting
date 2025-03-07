@@ -287,8 +287,8 @@ document.addEventListener("DOMContentLoaded", function() {
             leavePos: leavePos ? leavePos.value : null
         };
         //i love apis
-
-        fetch('https://script.google.com/macros/s/AKfycbyPSe-W_P7L_kZySGTDyJUW11isKVhZVOGlMDivYu9wivm77LtcyWL0YKrl9LrTM8p-Jg/exec', {
+        //NO TOUCHIES UR GONNA FUCK IT UP AND I WILL KILL YOU
+        fetch('https://script.google.com/macros/s/AKfycbw_RI_MEUsuwHhrkVHes4-cmLVMcJP1nky1e0oTLnZKv_FCPgxbyIw9UAO4GS3P9jLP/exec', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
