@@ -140,18 +140,22 @@ input[type="radio"] {
 
 .Jbutton {
         @include elementDefault;
-        font-size: 1.2em;
+        font-size: 1.4em;
         cursor: pointer;
         margin: 0.3em 0.7em;
         border-radius: 0.5em;
         display: inline-block !important; // Ensure buttons are inline-block
 }
 
+#submit {
+        font-size: 2em;
+}
 
 .textInputNormal {
         @include elementDefault;
         display: inline-block;
         width: 3em;
+        margin: 0.2em 0.3em;
         border-radius: 0.5em;
         cursor: text;
         font-size: 1.5em;
@@ -160,6 +164,10 @@ input[type="radio"] {
         &:focus {
                 outline: none;
         }
+}
+
+span[id^='cv'] { //makes the numbers bigger
+        font-size: 1.6em;
 }
 
 
@@ -174,22 +182,27 @@ input[type="radio"] {
 }
 
 
-.BL {
+.centerWrap {
+        text-align: center;
+}
+
+
+.borderLeft {
         border-left: 0.25em solid #14c600 !important;
 }
 
 
-.BR {
+.borderRight {
         border-right: 0.25em solid #14c600 !important;
 }
 
 
-.BB {
+.borderBottom {
         border-bottom: 0.25em solid #14c600 !important;
 }
 
 
-.BT {
+.borderTop {
         border-top: 0.25em solid #14c600 !important;  
 }
 
