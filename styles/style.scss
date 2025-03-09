@@ -1,6 +1,6 @@
 /*
  * THE FOLLOWING IS NOT, AND SHOULD NOT BE TAKEN AS LEGAL ADVICE. WE ARE NOT A LAW FIRM, HOWEVER, IF YOU WOULD EVER REQUIRE
- * ASSISTANCE FROM AN ACTUAL LAW FIRM, WOULD YOU LOOK NO FURTHER THAN THE EagleTeam. BECAUSE YOU DONT JUST NEED A 
+ * ASSISTANCE FROM AN ACTUAL LAW FIRM, WOULD YOU LOOK NO FURTHER THAN THE EagleTeam. BECAUSE YOU DON'T JUST NEED A 
  * LEGAL TEAM, YOU NEED THE EagleTeam.
  *
  * This code is liscenced under the legally distinct Cool Code 0 v1.0 liscence (CC0 v1.0). This means that the following
@@ -9,7 +9,7 @@
  * to this statement is automaticly triggered upon viewing a product actively utilizing this code. 
  */
 
-// chat jippity was used for explaning to me that i used @import and not @include in this production
+
 // imports
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 // fonts
@@ -18,17 +18,9 @@ $fontMain: 'Rubik';
 $animationTransition1: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
 // filters
 $filterMain: brightness(115%) saturate(110%) hue-rotate(-15deg);
-
-body {
-        margin: 0px;
-        color: rgb(235, 235, 235);
-        background-color: rgb(28, 28, 28);
-        font-family: $fontMain;
-}
-
-hr {
-        filter: opacity(50%) brightness(40%);
-}
+//colors
+$chaosGreen: #14c600;
+$chaosGreenDark: #14c60030;
 
 @mixin header {
         text-align: center;
@@ -42,9 +34,21 @@ hr {
         padding: 0.5em;
         transition: $animationTransition1; 
         &:hover {
-                border-color: #14c600;
-                color:#14c600;
+                border-color: $chaosGreen;
+                color:$chaosGreen;
         }
+}
+
+body {
+        margin: 0px;
+        color: rgb(235, 235, 235);
+        background-color: rgb(28, 28, 28);
+        font-family: $fontMain;
+}
+
+hr {
+        filter: opacity(50%) brightness(40%);
+        border: 2px solid $chaosGreen;
 }
 
 .headerMain {
@@ -52,54 +56,58 @@ hr {
         font-size: 3em;
 }
 
-.tableNormal { // copied from another web project that I, sir Henry Carl of Bend has made. some other SASS/SCSS has been pasted as well
+.tableNormal { //original design from another project by 5stygian, the code has been modified for this project
         margin: 24px auto;
         background-color: rgb(20,20,20);
         box-shadow: -8px 0px 8px rgba(20,20,20,0.2), 8px 0px 24px rgba(20,20,20,0.2), 0px 8px 8px rgba(20,20,20,0.2), 0px -8px 24px rgba(20,20,20,0.2);
         width: 50%;
         font-size: 1.5em;
-        th {    
-                background-color: rgb(24,24,24);
-                box-shadow: -8px 0px 8px rgba(24,24,24,0.2), 8px 0px 24px rgba(24,24,24,0.2), 0px 8px 8px rgba(24,24,24,0.2), 0px -8px 24px rgba(24,24,24,0.2);
-                margin: 2px;
-                padding: 8px 12px;
-                font-weight: bold;
-                text-align: center;
-                min-width: 200px;
-                border: 1px solid rgba(250,250,250,0.5);
-                transition: $animationTransition1;
-        }
+
+        th, 
         td {
                 background-color: rgb(24,24,24);
                 box-shadow: -8px 0px 8px rgba(24,24,24,0.2), 8px 0px 24px rgba(24,24,24,0.2), 0px 8px 8px rgba(24,24,24,0.2), 0px -8px 24px rgba(24,24,24,0.2);
                 margin: 2px;
-                padding: 4px 6px;
                 text-align: center;
-                min-width: 50px !important;
                 border: 1px solid rgba(250,250,250,0.5);
                 transition: $animationTransition1;
+
+                &:hover:not(.noShow) {
+                        transition: $animationTransition1;
+                        border: 1px solid rgb(80,80,80);
+                        cursor: default;
+                }
+
+        }
+
+        th {    
+                padding: 8px 12px;
+                font-weight: bold;
+                min-width: 200px;
+        }
+
+        td {
+                padding: 4px 6px;
+                min-width: 50px !important;
                 white-space: nowrap; // Prevent line breaks within the cell
         }
+
         .noShow:hover {
                 transition: $animationTransition1;
                 filter: $filterMain;
-        }
-        th:hover:not(.noShow),
-        td:hover:not(.noShow) {
-                transition: $animationTransition1;
-                border: 1px solid rgb(80,80,80);
-                cursor: default;
         }
 }
 
 #container {
         margin: auto;
-        width: 77.77777%; // lucky number 7!
+        width: 77.7777777777%; // lucky number 7!
         box-shadow: -8px 0px 8px rgba(24,24,24,0.2), 8px 0px 24px rgba(24,24,24,0.2);
+
         .containerInner {
                 padding: 8px 16px;
                 background-color: rgb(24,24,24);
-                .autoPhaseHeader {
+
+                h2 {
                         @include header;
                         font-size: 2em;
                 }
@@ -117,42 +125,34 @@ hr {
 }
 
 
-input[type="radio"] {
+input[type=radio], input[type=checkbox] {
         appearance: none;
-        -webkit-appearance: none;
         border-radius: 50%;
         background: rgb(0,0,0);
         border: 0.3em solid rgb(28,28,28);
-        outline: 0.2em solid #14c60030;
+        outline: 0.2em solid $chaosGreenDark;
         width: 1.5em;
         height: 1.5em;
         transition: $animationTransition1;
         cursor: pointer;
-        &:hover {
-                outline: 0.2em solid #14c600a0;
+
+        &:hover, 
+        &:checked {
+                outline: 0.2em solid $chaosGreen;
         }
         &:checked {
-                background: #14c600;
-                outline: 0.2em solid #14c600a0;
+                background: $chaosGreen;    
         }
 
 }
 
-.Jbutton {
-        @include elementDefault;
-        font-size: 1.4em;
-        cursor: pointer;
-        margin: 0.3em 0.7em;
-        border-radius: 0.5em;
-        display: inline-block !important; // Ensure buttons are inline-block
+input[type=checkbox] {
+        border-radius: 10% !important;
 }
 
-#submit {
-        font-size: 2em;
-}
-
-.textInputNormal {
+input[type=number] {
         @include elementDefault;
+
         display: inline-block;
         width: 3em;
         margin: 0.2em 0.3em;
@@ -166,9 +166,66 @@ input[type="radio"] {
         }
 }
 
-span[id^='cv'] { //makes the numbers bigger
+input::-webkit-inner-spin-button {
+        cursor: pointer;
+}
+
+textarea {
+        @include elementDefault;
+        display: inline-block;
+        width: 80%;
+        height: 10em;
+        margin: 0.5em 0;
+        border-radius: 1em;
+        resize: none;
+        font-size: 1.5em;
+        scrollbar-width: 2px;
+        scroll-behavior: smooth;
+        scrollbar-color: $chaosGreenDark;
+        &::-webkit-scrollbar {
+                background-color: rgba(0,0,0,0);
+        }
+        &::-webkit-scrollbar-thumb {
+                background-color: $chaosGreenDark;
+                cursor: grab;
+                border-radius: 1em;
+                &:active {
+                        cursor: grabbing;
+                }
+        }
+        &:focus, &:hover {
+                outline: none;
+                color: white !important;
+        }
+        &::spelling-error {
+                text-decoration: wavy $chaosGreen underline;
+        }
+}
+
+span[id^=cv], span[id^=Tcv] { //ripoff RegEx
         font-size: 1.6em;
 }
+
+.Jbutton {
+        @include elementDefault;
+        font-size: 1.4em;
+        cursor: pointer;
+        margin: 0.3em 0.7em;
+        min-width: 2.4em;
+        min-height: 2.4em;
+        border-radius: 0.5em;
+        display: inline-block !important; // Ensure buttons are inline-block
+}
+
+.Jbutton[id$=M] { //pretty much just mobile .Jbutton
+        min-width: 4em;
+}
+
+#submit {
+        font-size: 2em;
+}
+
+
 
 
 .desktop {
@@ -186,28 +243,36 @@ span[id^='cv'] { //makes the numbers bigger
         text-align: center;
 }
 
+.leftAlign *:not(input, th) {
+        text-align: left;
+} 
+
+label[for*=status] { //more RegEx
+        text-wrap: wrap;
+}
 
 .borderLeft {
-        border-left: 0.25em solid #14c600 !important;
+        border-left: 0.25em solid $chaosGreen !important;
 }
 
 
 .borderRight {
-        border-right: 0.25em solid #14c600 !important;
+        border-right: 0.25em solid $chaosGreen !important;
 }
 
 
 .borderBottom {
-        border-bottom: 0.25em solid #14c600 !important;
+        border-bottom: 0.25em solid $chaosGreen !important;
 }
 
 
 .borderTop {
-        border-top: 0.25em solid #14c600 !important;  
+        border-top: 0.25em solid $chaosGreen !important;  
 }
 
-:is(.BL,.BR,.BB,.BT):hover {
+:is(.borderLeft,.borderRight,.borderBottom,.borderTop):hover {
         filter: $filterMain;
+        transition: $animationTransition1;
 }
 
 
@@ -231,8 +296,9 @@ span[id^='cv'] { //makes the numbers bigger
                 width: 100vw;
         }
         .tableNormal {
-                border: 0.2em solid #14c600;
+                border: 0.2em solid $chaosGreen;
                 width: 90vw;
+
                 td, th {
                         min-width: 20px !important;
                         max-width: 50vw;
@@ -246,9 +312,5 @@ span[id^='cv'] { //makes the numbers bigger
         .desktop {
                 display: none !important;
                 pointer-events: none !important;
-        }
-        .tableText {
-                margin: 2px !important;
-                padding: 25px 10px !important;
         }
 }
