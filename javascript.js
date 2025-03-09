@@ -1,4 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+console.log('working');
+document.addEventListener("DOMContentLoaded", (event) => {
+    event.preventDefault();
+
     const minusButton = document.getElementById("minusL1");
     const plusButton = document.getElementById("plusL1");
     const counterDiv = document.getElementById("cvL1");
@@ -22,50 +25,50 @@ document.addEventListener("DOMContentLoaded", function() {
     let count3 = 0;
     let count4 = 0;
 
-    minusButton.addEventListener("click", function() {
+    minusButton.addEventListener("click", (event) => {
         if (count1 > 0) {
             count1--;
         }
         counterDiv.textContent = count1;
     });
 
-    plusButton.addEventListener("click", function() {
+    plusButton.addEventListener("click", (event) => {
         count1++;
         counterDiv.textContent = count1;
     });
 
-    minusButton2.addEventListener("click", function() {
+    minusButton2.addEventListener("click", (event) => {
         if (count2 > 0) {
             count2--;
         }
         counterDiv2.textContent = count2;
     });
 
-    plusButton2.addEventListener("click", function() {
+    plusButton2.addEventListener("click", (event) => {
         count2++;
         counterDiv2.textContent = count2;
     });
 
-    minusButton3.addEventListener("click", function() {
+    minusButton3.addEventListener("click", (event) => {
         if (count3 > 0) {
             count3--;
         }
         counterDiv3.textContent = count3;
     });
 
-    plusButton3.addEventListener("click", function() {
+    plusButton3.addEventListener("click", (event) => {
         count3++;
         counterDiv3.textContent = count3;
     });
 
-    minusButton4.addEventListener("click", function() {
+    minusButton4.addEventListener("click", (event) => {
         if (count4 > 0) {
             count4--;
         }
         counterDiv4.textContent = count4;
     });
 
-    plusButton4.addEventListener("click", function() {
+    plusButton4.addEventListener("click", (event) => {
         count4++;
         counterDiv4.textContent = count4;
     });
@@ -87,38 +90,38 @@ document.addEventListener("DOMContentLoaded", function() {
     let countS = 0;
     let countP = 0;
 
-    minusButtonN.addEventListener("click", function() {
+    minusButtonN.addEventListener("click", (event) => {
         if (countN > 0) {
             countN--;
         }
         counterDivN.textContent = countN;
     });
 
-    plusButtonN.addEventListener("click", function() {
+    plusButtonN.addEventListener("click", (event) => {
         countN++;
         counterDivN.textContent = countN;
     });
 
-    minusButtonS.addEventListener("click", function() {
+    minusButtonS.addEventListener("click", (event) => {
         if (countS > 0) {
             countS--;
         }
         counterDivS.textContent = countS;
     });
 
-    plusButtonS.addEventListener("click", function() {
+    plusButtonS.addEventListener("click", (event) => {
         countS++;
         counterDivS.textContent = countS;
     });
 
-    minusButtonP.addEventListener("click", function() {
+    minusButtonP.addEventListener("click", (event) => {
         if (countP > 0) {
             countP--;
         }
         counterDivP.textContent = countP;
     });
 
-    plusButtonP.addEventListener("click", function() {
+    plusButtonP.addEventListener("click", (event) => {
         countP++;
         counterDivP.textContent = countP;
     });
@@ -264,7 +267,273 @@ document.addEventListener("DOMContentLoaded", function() {
         counterDivPM.innerHTML = countPM;
     });
 
-    submitButton.addEventListener("click", function() {
+    //TELEOP
+
+
+    const TminusButton = document.getElementById("TminusL1");
+    const TplusButton = document.getElementById("TplusL1");
+    const TcounterDiv = document.getElementById("TcvL1");
+
+    const TminusButton2 = document.getElementById("TminusL2");
+    const TplusButton2 = document.getElementById("TplusL2");
+    const TcounterDiv2 = document.getElementById("TcvL2");
+
+    const TminusButton3 = document.getElementById("TminusL3");
+    const TplusButton3 = document.getElementById("TplusL3");
+    const TcounterDiv3 = document.getElementById("TcvL3");
+
+    const TminusButton4 = document.getElementById("TminusL4");
+    const TplusButton4 = document.getElementById("TplusL4");
+    const TcounterDiv4 = document.getElementById("TcvL4");
+
+    let Tcount1 = 0;
+    let Tcount2 = 0;
+    let Tcount3 = 0;
+    let Tcount4 = 0;
+
+    TminusButton.addEventListener("click", (event) => {
+        if (Tcount1 > 0) {
+            Tcount1--;
+        }
+        TcounterDiv.textContent = Tcount1;
+    });
+
+    TplusButton.addEventListener("click", (event) => {
+        Tcount1++;
+        TcounterDiv.textContent = Tcount1;
+    });
+
+    TminusButton2.addEventListener("click", (event) => {
+        if (Tcount2 > 0) {
+            Tcount2--;
+        }
+        TcounterDiv2.textContent = Tcount2;
+    });
+
+    TplusButton2.addEventListener("click", (event) => {
+        Tcount2++;
+        TcounterDiv2.textContent = Tcount2;
+    });
+
+    TminusButton3.addEventListener("click", (event) => {
+        if (Tcount3 > 0) {
+            Tcount3--;
+        }
+        TcounterDiv3.textContent = Tcount3;
+    });
+
+    TplusButton3.addEventListener("click", (event) => {
+        Tcount3++;
+        TcounterDiv3.textContent = Tcount3;
+    });
+
+    TminusButton4.addEventListener("click", (event) => {
+        if (Tcount4 > 0) {
+            Tcount4--;
+        }
+        TcounterDiv4.textContent = Tcount4;
+    });
+
+    TplusButton4.addEventListener("click", (event) => {
+        Tcount4++;
+        TcounterDiv4.textContent = Tcount4;
+    });
+
+    // Algae counters
+    const TminusButtonN = document.getElementById("TminusN");
+    const TplusButtonN = document.getElementById("TplusN");
+    const TcounterDivN = document.getElementById("TcvN");
+
+    const TminusButtonS = document.getElementById("TminusS");
+    const TplusButtonS = document.getElementById("TplusS");
+    const TcounterDivS = document.getElementById("TcvS");
+
+    const TminusButtonP = document.getElementById("TminusP");
+    const TplusButtonP = document.getElementById("TplusP");
+    const TcounterDivP = document.getElementById("TcvP");
+
+    let TcountN = 0;
+    let TcountS = 0;
+    let TcountP = 0;
+
+    TminusButtonN.addEventListener("click", (event) => {
+        if (TcountN > 0) {
+            TcountN--;
+        }
+        TcounterDivN.textContent = TcountN;
+    });
+
+    TplusButtonN.addEventListener("click", (event) => {
+        TcountN++;
+        TcounterDivN.textContent = TcountN;
+    });
+
+    TminusButtonS.addEventListener("click", (event) => {
+        if (TcountS > 0) {
+            TcountS--;
+        }
+        TcounterDivS.textContent = TcountS;
+    });
+
+    TplusButtonS.addEventListener("click", (event) => {
+        TcountS++;
+        TcounterDivS.textContent = TcountS;
+    });
+
+    TminusButtonP.addEventListener("click", (event) => {
+        if (TcountP > 0) {
+            TcountP--;
+        }
+        TcounterDivP.textContent = TcountP;
+    });
+
+    TplusButtonP.addEventListener("click", (event) => {
+        TcountP++;
+        TcounterDivP.textContent = TcountP;
+    });
+
+    // Mobile increments
+    const TminusButtonM = document.getElementById("TminusL1M");
+    const TplusButtonM = document.getElementById("TplusL1M");
+    const TcounterDivM = document.getElementById("TcvL1M");
+
+    const TminusButton2M = document.getElementById("TminusL2M");
+    const TplusButton2M = document.getElementById("TplusL2M");
+    const TcounterDiv2M = document.getElementById("TcvL2M");
+
+    const TminusButton3M = document.getElementById("TminusL3M");
+    const TplusButton3M = document.getElementById("TplusL3M");
+    const TcounterDiv3M = document.getElementById("TcvL3M");
+
+    const TminusButton4M = document.getElementById("TminusL4M");
+    const TplusButton4M = document.getElementById("TplusL4M");
+    const TcounterDiv4M = document.getElementById("TcvL4M");
+
+    let Tcount1M = 0;
+    let Tcount2M = 0;
+    let Tcount3M = 0;
+    let Tcount4M = 0;
+
+    TminusButtonM.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (Tcount1M > 0) {
+            Tcount1M--;
+        }
+        TcounterDivM.innerHTML = Tcount1M;
+        console.log(Tcount1M);
+    });
+
+    TplusButtonM.addEventListener("click", (event) => {
+        event.preventDefault();
+        Tcount1M++;
+        TcounterDivM.innerHTML = Tcount1M;
+        console.log(Tcount1M);
+    });
+
+    TplusButton2M.addEventListener("click", (event) => {
+        event.preventDefault();
+        Tcount2M++;
+        TcounterDiv2M.innerHTML = Tcount2M;
+    });
+
+    TminusButton2M.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (Tcount2M > 0) {
+            Tcount2M--;
+        }
+        TcounterDiv2M.innerHTML = Tcount2M;
+    });
+
+    TplusButton3M.addEventListener("click", (event) => {
+        event.preventDefault();
+        Tcount3M++;
+        TcounterDiv3M.innerHTML = Tcount3M;
+    });
+
+    TminusButton3M.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (Tcount3M > 0) {
+            Tcount3M--;
+        }
+        TcounterDiv3M.innerHTML = Tcount3M;
+    });
+
+    TplusButton4M.addEventListener("click", (event) => {
+        event.preventDefault();
+        Tcount4M++;
+        TcounterDiv4M.innerHTML = Tcount4M;
+    });
+
+    TminusButton4M.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (Tcount4M > 0) {
+            Tcount4M--;
+        }
+        TcounterDiv4M.innerHTML = Tcount4M;
+    });
+
+    // Mobile increments for algae
+    const TminusButtonNM = document.getElementById("TminusNM");
+    const TplusButtonNM = document.getElementById("TplusNM");
+    const TcounterDivNM = document.getElementById("TcvNM");
+
+    const TminusButtonSM = document.getElementById("TminusSM");
+    const TplusButtonSM = document.getElementById("TplusSM");
+    const TcounterDivSM = document.getElementById("TcvSM");
+
+    const TminusButtonPM = document.getElementById("TminusPM");
+    const TplusButtonPM = document.getElementById("TplusPM");
+    const TcounterDivPM = document.getElementById("TcvPM");
+
+    let TcountNM = 0;
+    let TcountSM = 0;
+    let TcountPM = 0;
+
+    TminusButtonNM.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (TcountNM > 0) {
+            TcountNM--;
+        }
+        TcounterDivNM.innerHTML = TcountNM;
+        console.log(TcountNM);
+    });
+
+    TplusButtonNM.addEventListener("click", (event) => {
+        event.preventDefault();
+        TcountNM++;
+        TcounterDivNM.innerHTML = TcountNM;
+        console.log(TcountNM);
+    });
+
+    TplusButtonSM.addEventListener("click", (event) => {
+        event.preventDefault();
+        TcountSM++;
+        TcounterDivSM.innerHTML = TcountSM;
+    });
+
+    TminusButtonSM.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (TcountSM > 0) {
+            TcountSM--;
+        }
+        TcounterDivSM.innerHTML = TcountSM;
+    });
+
+    TplusButtonPM.addEventListener("click", (event) => {
+        event.preventDefault();
+        TcountPM++;
+        TcounterDivPM.innerHTML = TcountPM;
+    });
+
+    TminusButtonPM.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (TcountPM > 0) {
+            TcountPM--;
+        }
+        TcounterDivPM.innerHTML = TcountPM;
+    });
+
+    submitButton.addEventListener("click", (event) => {
         const startPos = document.querySelector('input[name="startPos"]:checked');
         const leavePos = document.querySelector('input[name="leave"]:checked');
 
