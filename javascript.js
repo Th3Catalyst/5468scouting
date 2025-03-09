@@ -538,20 +538,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const leavePos = document.querySelector('input[name="leave"]:checked');
 
         const data = {
-            counter1: count1,
-            counter2: count2,
-            counter3: count3,
-            counter4: count4,
-            counterN: countN,
-            counterS: countS,
-            counterP: countP,
-            counter1M: count1M,
-            counter2M: count2M,
-            counter3M: count3M,
-            counter4M: count4M,
-            counterNM: countNM,
-            counterSM: countSM,
-            counterPM: countPM,
+            counter1: count1 ? count1.value : count1M,
+            counter2: count2 ? count2.value : count2M,
+            counter3: count3 ? count3.value : count3M,
+            counter4: count4 ? count4.value : count4M,
+            counterN: countN ? countN.value : countNM,
+            counterS: countS ? countS.value : countSM,
+            counterP: countP ? countP.value : countPM,
             startPos: startPos ? startPos.value : null,
             leavePos: leavePos ? leavePos.value : null
         };
