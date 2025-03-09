@@ -153,9 +153,6 @@ textarea {
   border-radius: 1em;
   resize: none;
   font-size: 1.5em;
-  scrollbar-width: 2px;
-  scroll-behavior: smooth;
-  scrollbar-color: rgba(20, 198, 0, 0.1882352941);
 }
 textarea:hover {
   border-color: #14c600;
