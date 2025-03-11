@@ -1,4 +1,4 @@
-console.log('working, api test v1.3');
+console.log('working, api test v1.4');
 document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
 
@@ -300,12 +300,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
         };
         const queryString = new URLSearchParams(data).toString();
 
-        fetch(`https://script.google.com/macros/s/AKfycbxnYz7naDtigwTtm-A0wgalTJcIZGFitt9asTI5kGRJfLx8mBRLlIBXqRDDMw2KL6VQgg/exec${queryString}`, {
-            method: 'POST',
+        fetch(`https://script.google.com/macros/s/AKfycbyD-Iuf9XkJpHe6k6Cy2wevIQj_lN9onHjdrFkmii_nRMzu1Vb04j62-AWvhHZJyO6uwQ/exec${queryString}`, {
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': 'https://5468scouting.netlify.app',
-                'Access-Control-Allow-Methods': 'POST, OPTIONS',
+                'Access-Control-Allow-Methods': 'GET, OPTIONS',
             }
         })
         .then(response => response.json())
