@@ -1,4 +1,4 @@
-console.log('working, api test v1.4');
+console.log('working, api test v1.5');
 document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
 
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         };
         const queryString = new URLSearchParams(data).toString();
 
-        fetch(`https://script.google.com/macros/s/AKfycbyD-Iuf9XkJpHe6k6Cy2wevIQj_lN9onHjdrFkmii_nRMzu1Vb04j62-AWvhHZJyO6uwQ/exec${queryString}`, {
+        fetch(`https://script.google.com/macros/s/AKfycby0-rfEz9mVsfREx7xhMYFvNmRJqjVpWBolG1ew2mlqjtoahxC2fhCWJ04oxxYiy5dBgA/exec${queryString}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
