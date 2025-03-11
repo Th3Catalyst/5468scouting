@@ -298,11 +298,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
             notes: notes,
             total: total
         };
-        //i love apis
-        //NO TOUCHIES UR GONNA MESS IT UP
-        fetch('https://script.google.com/macros/s/AKfycbyJFv9cfYzMDKPe0Z-0z1Rl4Q-g74HdkET0v41lTMHW4_ubirnZWM_cliOIQYFFVgPYsg/exec', {
-            method: 'POST',
-            body: JSON.stringify(data),
+        const queryString = new URLSearchParams(data).toString();
+
+        fetch(`https://script.google.com/macros/s/AKfycbz6H-8fiROALUtxhWGhF-6wZ6w61cLLWtMhiF5ZOFBcJe5aUn_jgJIh4siUsFedl9uagA/exec?${queryString}`, {
+            method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
             }
