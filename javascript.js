@@ -126,147 +126,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         counterDivP.textContent = countP;
     });
 
-    // Mobile increments
-    const minusButtonM = document.getElementById("minusL1M");
-    const plusButtonM = document.getElementById("plusL1M");
-    const counterDivM = document.getElementById("cvL1M");
-
-    const minusButton2M = document.getElementById("minusL2M");
-    const plusButton2M = document.getElementById("plusL2M");
-    const counterDiv2M = document.getElementById("cvL2M");
-
-    const minusButton3M = document.getElementById("minusL3M");
-    const plusButton3M = document.getElementById("plusL3M");
-    const counterDiv3M = document.getElementById("cvL3M");
-
-    const minusButton4M = document.getElementById("minusL4M");
-    const plusButton4M = document.getElementById("plusL4M");
-    const counterDiv4M = document.getElementById("cvL4M");
-
-    let count1M = 0;
-    let count2M = 0;
-    let count3M = 0;
-    let count4M = 0;
-
-    minusButtonM.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (count1M > 0) {
-            count1M--;
-        }
-        counterDivM.innerHTML = count1M;
-        console.log(count1M);
-    });
-
-    plusButtonM.addEventListener("click", (event) => {
-        event.preventDefault();
-        count1M++;
-        counterDivM.innerHTML = count1M;
-        console.log(count1M);
-    });
-
-    plusButton2M.addEventListener("click", (event) => {
-        event.preventDefault();
-        count2M++;
-        counterDiv2M.innerHTML = count2M;
-    });
-
-    minusButton2M.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (count2M > 0) {
-            count2M--;
-        }
-        counterDiv2M.innerHTML = count2M;
-    });
-
-    plusButton3M.addEventListener("click", (event) => {
-        event.preventDefault();
-        count3M++;
-        counterDiv3M.innerHTML = count3M;
-    });
-
-    minusButton3M.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (count3M > 0) {
-            count3M--;
-        }
-        counterDiv3M.innerHTML = count3M;
-    });
-
-    plusButton4M.addEventListener("click", (event) => {
-        event.preventDefault();
-        count4M++;
-        counterDiv4M.innerHTML = count4M;
-    });
-
-    minusButton4M.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (count4M > 0) {
-            count4M--;
-        }
-        counterDiv4M.innerHTML = count4M;
-    });
-
-    // Mobile increments for algae
-    const minusButtonNM = document.getElementById("minusNM");
-    const plusButtonNM = document.getElementById("plusNM");
-    const counterDivNM = document.getElementById("cvNM");
-
-    const minusButtonSM = document.getElementById("minusSM");
-    const plusButtonSM = document.getElementById("plusSM");
-    const counterDivSM = document.getElementById("cvSM");
-
-    const minusButtonPM = document.getElementById("minusPM");
-    const plusButtonPM = document.getElementById("plusPM");
-    const counterDivPM = document.getElementById("cvPM");
-
-    let countNM = 0;
-    let countSM = 0;
-    let countPM = 0;
-
-    minusButtonNM.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (countNM > 0) {
-            countNM--;
-        }
-        counterDivNM.innerHTML = countNM;
-        console.log(countNM);
-    });
-
-    plusButtonNM.addEventListener("click", (event) => {
-        event.preventDefault();
-        countNM++;
-        counterDivNM.innerHTML = countNM;
-        console.log(countNM);
-    });
-
-    plusButtonSM.addEventListener("click", (event) => {
-        event.preventDefault();
-        countSM++;
-        counterDivSM.innerHTML = countSM;
-    });
-
-    minusButtonSM.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (countSM > 0) {
-            countSM--;
-        }
-        counterDivSM.innerHTML = countSM;
-    });
-
-    plusButtonPM.addEventListener("click", (event) => {
-        event.preventDefault();
-        countPM++;
-        counterDivPM.innerHTML = countPM;
-    });
-
-    minusButtonPM.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (countPM > 0) {
-            countPM--;
-        }
-        counterDivPM.innerHTML = countPM;
-    });
-
     //TELEOP
 
 
@@ -392,150 +251,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         TcounterDivP.textContent = TcountP;
     });
 
-    // Mobile increments
-    const TminusButtonM = document.getElementById("TminusL1M");
-    const TplusButtonM = document.getElementById("TplusL1M");
-    const TcounterDivM = document.getElementById("TcvL1M");
-
-    const TminusButton2M = document.getElementById("TminusL2M");
-    const TplusButton2M = document.getElementById("TplusL2M");
-    const TcounterDiv2M = document.getElementById("TcvL2M");
-
-    const TminusButton3M = document.getElementById("TminusL3M");
-    const TplusButton3M = document.getElementById("TplusL3M");
-    const TcounterDiv3M = document.getElementById("TcvL3M");
-
-    const TminusButton4M = document.getElementById("TminusL4M");
-    const TplusButton4M = document.getElementById("TplusL4M");
-    const TcounterDiv4M = document.getElementById("TcvL4M");
-
-    let Tcount1M = 0;
-    let Tcount2M = 0;
-    let Tcount3M = 0;
-    let Tcount4M = 0;
-
-    TminusButtonM.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (Tcount1M > 0) {
-            Tcount1M--;
-        }
-        TcounterDivM.innerHTML = Tcount1M;
-        console.log(Tcount1M);
-    });
-
-    TplusButtonM.addEventListener("click", (event) => {
-        event.preventDefault();
-        Tcount1M++;
-        TcounterDivM.innerHTML = Tcount1M;
-        console.log(Tcount1M);
-    });
-
-    TplusButton2M.addEventListener("click", (event) => {
-        event.preventDefault();
-        Tcount2M++;
-        TcounterDiv2M.innerHTML = Tcount2M;
-    });
-
-    TminusButton2M.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (Tcount2M > 0) {
-            Tcount2M--;
-        }
-        TcounterDiv2M.innerHTML = Tcount2M;
-    });
-
-    TplusButton3M.addEventListener("click", (event) => {
-        event.preventDefault();
-        Tcount3M++;
-        TcounterDiv3M.innerHTML = Tcount3M;
-    });
-
-    TminusButton3M.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (Tcount3M > 0) {
-            Tcount3M--;
-        }
-        TcounterDiv3M.innerHTML = Tcount3M;
-    });
-
-    TplusButton4M.addEventListener("click", (event) => {
-        event.preventDefault();
-        Tcount4M++;
-        TcounterDiv4M.innerHTML = Tcount4M;
-    });
-
-    TminusButton4M.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (Tcount4M > 0) {
-            Tcount4M--;
-        }
-        TcounterDiv4M.innerHTML = Tcount4M;
-    });
-
-    // Mobile increments for algae
-    const TminusButtonNM = document.getElementById("TminusNM");
-    const TplusButtonNM = document.getElementById("TplusNM");
-    const TcounterDivNM = document.getElementById("TcvNM");
-
-    const TminusButtonSM = document.getElementById("TminusSM");
-    const TplusButtonSM = document.getElementById("TplusSM");
-    const TcounterDivSM = document.getElementById("TcvSM");
-
-    const TminusButtonPM = document.getElementById("TminusPM");
-    const TplusButtonPM = document.getElementById("TplusPM");
-    const TcounterDivPM = document.getElementById("TcvPM");
-
-    let TcountNM = 0;
-    let TcountSM = 0;
-    let TcountPM = 0;
-
-    TminusButtonNM.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (TcountNM > 0) {
-            TcountNM--;
-        }
-        TcounterDivNM.innerHTML = TcountNM;
-        console.log(TcountNM);
-    });
-
-    TplusButtonNM.addEventListener("click", (event) => {
-        event.preventDefault();
-        TcountNM++;
-        TcounterDivNM.innerHTML = TcountNM;
-        console.log(TcountNM);
-    });
-
-    TplusButtonSM.addEventListener("click", (event) => {
-        event.preventDefault();
-        TcountSM++;
-        TcounterDivSM.innerHTML = TcountSM;
-    });
-
-    TminusButtonSM.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (TcountSM > 0) {
-            TcountSM--;
-        }
-        TcounterDivSM.innerHTML = TcountSM;
-    });
-
-    TplusButtonPM.addEventListener("click", (event) => {
-        event.preventDefault();
-        TcountPM++;
-        TcounterDivPM.innerHTML = TcountPM;
-    });
-
-    TminusButtonPM.addEventListener("click", (event) => {
-        event.preventDefault();
-        if (TcountPM > 0) {
-            TcountPM--;
-        }
-        TcounterDivPM.innerHTML = TcountPM;
-    });
 
     submitButton.addEventListener("click", (event) => {
         const startPos = document.querySelector('input[name="startPos"]:checked');
-        const leavePos = document.querySelector('input[name="leave"]:checked');
+        const leavePos = document.querySelector('input[id="leaveY"]:checked') ? 1 : 0;
+        const barge = document.querySelector('input[id="statusParked"]:checked') ? 1 : 0;
+        const shallow = document.querySelector('input[id="statusShallow"]:checked') ? 1 : 0;
+        const deep = document.querySelector('input[id="statusDeep"]:checked') ? 1 : 0;
         const finalStatus = document.querySelector('input[name="status"]:checked');
         const coralPickup = document.querySelector('input[name="coralPickup"]:checked');
         const algaePickup = document.querySelector('input[name="algaePickup"]:checked');
@@ -544,6 +266,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const defense = document.querySelector('input[name="defense"]:checked');
         const speed = document.querySelector('input[name="speed"]:checked');
         const notes = document.getElementById("notes").value;
+        const total = 3*leavePos 
+                    + 3*count1 + 4*count2 + 6*count3 + 7*count4 + 4*countN + 6*countP
+                    + 2*Tcount1 + 3*Tcount2 + 4*Tcount3 + 5*Tcount4 + 4*TcountN + 6*TcountP
+                    + 2*barge + 6*shallow + 12*deep;
+        console.log(total);
 
         const assessments = [];
         document.querySelectorAll('input[name="assess"]:checked').forEach((checkbox) => {
@@ -551,13 +278,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
 
         const data = {
-            counter1: count1 ? count1.value : count1M,
-            counter2: count2 ? count2.value : count2M,
-            counter3: count3 ? count3.value : count3M,
-            counter4: count4 ? count4.value : count4M,
-            counterN: countN ? countN.value : countNM,
-            counterS: countS ? countS.value : countSM,
-            counterP: countP ? countP.value : countPM,
+            counter1: count1 ? count1.value : null,
+            counter2: count2 ? count2.value : null,
+            counter3: count3 ? count3.value : null,
+            counter4: count4 ? count4.value : null,
+            counterN: countN ? countN.value : null,
+            counterS: countS ? countS.value : null,
+            counterP: countP ? countP.value : null,
             startPos: startPos ? startPos.value : null,
             leavePos: leavePos ? leavePos.value : null,
             finalStatus: finalStatus ? finalStatus.value : null,
@@ -568,7 +295,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
             defense: defense ? defense.value : null,
             speed: speed ? speed.value : null,
             assessments: assessments.join(', '),
-            notes: notes
+            notes: notes,
+            total: total
         };
         //i love apis
         //NO TOUCHIES UR GONNA MESS IT UP
