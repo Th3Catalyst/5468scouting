@@ -191,7 +191,7 @@ span[id^=cv], span[id^=Tcv] {
   font-size: 1.4em;
   cursor: pointer;
   margin: 0.3em 0.7em;
-  min-width: 2.4em;
+  min-width: 4em;
   min-height: 2.4em;
   border-radius: 0.5em;
   display: inline-block !important;
@@ -199,10 +199,6 @@ span[id^=cv], span[id^=Tcv] {
 .Jbutton:hover {
   border-color: #14c600;
   color: #14c600;
-}
-
-.Jbutton[id$=M] {
-  min-width: 4em;
 }
 
 #submit {
