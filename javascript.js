@@ -1,4 +1,4 @@
-console.log('working');
+console.log('working, api test v1.0');
 document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
 
@@ -536,6 +536,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
     submitButton.addEventListener("click", (event) => {
         const startPos = document.querySelector('input[name="startPos"]:checked');
         const leavePos = document.querySelector('input[name="leave"]:checked');
+        const finalStatus = document.querySelector('input[name="status"]:checked');
+        const coralPickup = document.querySelector('input[name="coralPickup"]:checked');
+        const algaePickup = document.querySelector('input[name="algaePickup"]:checked');
+        const coopertition = document.querySelector('input[name="coopertition"]:checked');
+        const driverSkill = document.querySelector('input[name="skill"]:checked');
+        const defense = document.querySelector('input[name="defense"]:checked');
+        const speed = document.querySelector('input[name="speed"]:checked');
+        const notes = document.getElementById("notes").value;
+
+        const assessments = [];
+        document.querySelectorAll('input[name="assess"]:checked').forEach((checkbox) => {
+            assessments.push(checkbox.id);
+        });
 
         const data = {
             counter1: count1 ? count1.value : count1M,
@@ -546,11 +559,20 @@ document.addEventListener("DOMContentLoaded", (event) => {
             counterS: countS ? countS.value : countSM,
             counterP: countP ? countP.value : countPM,
             startPos: startPos ? startPos.value : null,
-            leavePos: leavePos ? leavePos.value : null
+            leavePos: leavePos ? leavePos.value : null,
+            finalStatus: finalStatus ? finalStatus.value : null,
+            coralPickup: coralPickup ? coralPickup.value : null,
+            algaePickup: algaePickup ? algaePickup.value : null,
+            coopertition: coopertition ? coopertition.value : null,
+            driverSkill: driverSkill ? driverSkill.value : null,
+            defense: defense ? defense.value : null,
+            speed: speed ? speed.value : null,
+            assessments: assessments.join(', '),
+            notes: notes
         };
         //i love apis
         //NO TOUCHIES UR GONNA MESS IT UP
-        fetch('https://script.google.com/macros/s/AKfycbycna0iGnMKm0HV-dVr9r7DN_qORMNcTkjMmuUtoUUYpuy6SdV4EtVAae_xAtbXzwNquw/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbyJFv9cfYzMDKPe0Z-0z1Rl4Q-g74HdkET0v41lTMHW4_ubirnZWM_cliOIQYFFVgPYsg/exec', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
