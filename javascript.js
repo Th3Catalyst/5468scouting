@@ -302,8 +302,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         fetch(`https://script.google.com/macros/s/AKfycbyD-Iuf9XkJpHe6k6Cy2wevIQj_lN9onHjdrFkmii_nRMzu1Vb04j62-AWvhHZJyO6uwQ/exec${queryString}`, {
             method: 'GET',
+            redirect: "follow",
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'text/plain;charset=utf-8',
                 'Access-Control-Allow-Origin': 'https://5468scouting.netlify.app/'
             },
         })
