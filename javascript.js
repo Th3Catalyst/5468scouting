@@ -304,6 +304,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': 'https://5468scouting.netlify.app/'
             },
         })
         .then(response => response.json())
