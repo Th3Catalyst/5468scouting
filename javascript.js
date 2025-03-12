@@ -1,4 +1,4 @@
-console.log('working, api test v1.7');
+console.log('working, api test v1.8');
 document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
 
