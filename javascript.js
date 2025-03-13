@@ -1,4 +1,4 @@
-console.log('working, api test v1.8');
+console.log('working, api test v1.9');
 document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
 
@@ -300,7 +300,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         };
         const queryString = new URLSearchParams(data).toString();
 
-        fetch(`https://script.google.com/macros/s/AKfycbyD-Iuf9XkJpHe6k6Cy2wevIQj_lN9onHjdrFkmii_nRMzu1Vb04j62-AWvhHZJyO6uwQ/exec${queryString}`, {
+        fetch(`https://script.google.com/macros/s/AKfycbwps7OirXxA5J5cVTgUSd3PD6UjDKQwW043H5q_yoe_EPZd7jK1hn3bIY82u9ZlYQDPhw/exec${queryString}`, {
             method: 'GET',
             redirect: "follow",
             headers: {
