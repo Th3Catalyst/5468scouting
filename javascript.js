@@ -300,12 +300,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         };
         const queryString = new URLSearchParams(data).toString();
 
-        fetch(`https://script.google.com/macros/s/AKfycbwps7OirXxA5J5cVTgUSd3PD6UjDKQwW043H5q_yoe_EPZd7jK1hn3bIY82u9ZlYQDPhw/exec${queryString}`, {
+        fetch(`https://script.google.com/macros/s/AKfycbwJJMfuSC3685RxPM35RE7p-eeBKD46HjZOxv3LlQ_1Xn7eJGOh1YRQAgK4gD5K3tSjsg/exec?${queryString}`, {
             method: 'GET',
             redirect: "follow",
             headers: {
-                'Content-Type': 'text/plain;charset=utf-8',
-                'Access-Control-Allow-Origin': 'https://5468scouting.netlify.app/'
+                'Content-Type': 'text/plain;charset=utf-8'
             },
         })
         .then(response => response.json())
