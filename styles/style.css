@@ -14,8 +14,10 @@ body {
   color: rgb(235, 235, 235);
   background-color: rgb(28, 28, 28);
   font-family: "Rubik";
-  touch-action: manipulation;
 }
+* {
+      touch-action: manipulation;
+  }
 
 hr {
   filter: opacity(50%) brightness(40%);
