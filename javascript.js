@@ -128,7 +128,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     //TELEOP
 
-
     const TminusButton = document.getElementById("TminusL1");
     const TplusButton = document.getElementById("TplusL1");
     const TcounterDiv = document.getElementById("TcvL1");
@@ -251,6 +250,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         TcounterDivP.textContent = TcountP;
     });
 
+    // Read URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const scoutName = urlParams.get('name');
+    const matchNum = urlParams.get('match');
+    const teamNumber = urlParams.get('team');
 
     submitButton.addEventListener("click", (event) => {
         const startPos = document.querySelector('input[name="startPos"]:checked');
@@ -278,6 +282,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
 
         const data = {
+            scoutName: scoutName,
+            matchNum: matchNum,
+            teamNumber: teamNumber,
             counter1: count1 ? count1.value : null,
             counter2: count2 ? count2.value : null,
             counter3: count3 ? count3.value : null,

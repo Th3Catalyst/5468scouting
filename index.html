@@ -24,10 +24,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="number" id="matchNum">
+                        <input type="number" id="matchNum" readonly>
                     </td>
                     <td>
-                        <input type="number" id="team" value="5468">
+                        <input type="number" id="team" readonly>
                     </td>
                 </tr>
             </table>
@@ -584,4 +584,17 @@
             </div>
     </div>
 </body>
+<script>
+    window.addEventListener('load', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const teamNumber = urlParams.get('team');
+        const matchNum = urlParams.get('match');
+        if (teamNumber) {
+            document.getElementById('team').value = teamNumber;
+        }
+        if (matchNum) {
+            document.getElementById('matchNum').value = matchNum;
+        }
+    });
+</script>
 </html>
