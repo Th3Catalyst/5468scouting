@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>2025 Scouting Form</title>
+    <title>Scouting Selection</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="/styles/style.css" rel="stylesheet" type="text/css" />
@@ -10,591 +10,120 @@
 </head>
 <body>
     <div id="container">
-        <div class="containerInner">
-            <h1 class="headerMain">5468 Scouting Form 2025</h1>
-            <hr>
-            <table class="tableNormal">
-                <tr>
-                    <th>
-                        <span class="header">Match #</span> 
-                    </th>
-                    <th>
-                        <span class="header">Team #</span> 
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="number" id="matchNum" readonly>
-                    </td>
-                    <td>
-                        <input type="number" id="team" readonly>
-                    </td>
-                </tr>
-            </table>
-            <h2>Auto Phase</h2>
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="3">
-                        <span class="header">Starting Position</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="startPos" id="startL"> <label for="startL">Left</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="startPos" id="startC"> <label for="startC">Center</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="startPos" id="startR"> <label for="startR">Right</label>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="2">
-                        <span class="header">Did robot leave starting position?</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="leave" id="leaveY" value="Yes"> <label for="leaveY">Yes</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="leave" id="leaveN" value="No"> <label for="leaveN">No</label>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="2" class="borderBottom">
-                        <span class="header">Coral</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td class="borderRight borderTop">
-                        <strong>L1</strong>
-                    </td>
-                    <td class="borderLeft borderTop">
-                        <strong>L2</strong>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="plusL1" class="Jbutton">+1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="plusL2" class="Jbutton">+1</button>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <span id="cvL1" >0</span>
-                    </td>
-                    <td class="borderLeft">
-                        <span id="cvL2" >0</span>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight borderBottom">
-                        <button id="minusL1" class="Jbutton">-1</button>
-                    </td>
-                    <td class="borderLeft borderBottom">
-                        <button id="minusL2" class="Jbutton">-1</button>
-                    </td>    
-                </tr>
-                <tr>
-                    <td class="borderRight borderTop">
-                        <strong>L3</strong>
-                    </td>
-                    <td class="borderLeft borderTop">
-                        <strong>L4</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="plusL3" class="Jbutton">+1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="plusL4" class="Jbutton">+1</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <span id="cvL3" >0</span>
-                    </td>
-                    <td class="borderLeft">
-                        <span id="cvL4" >0</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="minusL3" class="Jbutton">-1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="minusL4" class="Jbutton">-1</button>
-                    </td>
-            </table>
-
-            <!-- ALGAE -->
-            <br>
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="2" class="borderBottom">
-                        <span class="header">Algae</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td class="borderRight borderTop">
-                        <strong>Net</strong>
-                    </td>
-                    <td class="borderLeft borderTop">
-                        <strong>Scrub</strong>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="plusN" class="Jbutton">+1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="plusS" class="Jbutton">+1</button>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <span id="cvN" >0</span>
-                    </td>
-                    <td class="borderLeft">
-                        <span id="cvS" >0</span>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight borderBottom">
-                        <button id="minusN" class="Jbutton">-1</button>
-                    </td>
-                    <td class="borderLeft borderBottom">
-                        <button id="minusS" class="Jbutton">-1</button>
-                    </td>    
-                </tr>
-                <tr>
-                    <td colspan="2" class="borderTop">
-                        <strong>Processor</strong>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button id="plusP" class="Jbutton">+1</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <span id="cvP" >0</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button id="minusP" class="Jbutton">-1</button>
-                    </td>
-            </table>
-        
-            <h2>Teleop</h2>
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="2" class="borderBottom">
-                        <span class="header">Coral</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td class="borderRight borderTop">
-                        <strong>L1</strong>
-                    </td>
-                    <td class="borderLeft borderTop">
-                        <strong>L2</strong>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="TplusL1" class="Jbutton">+1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="TplusL2" class="Jbutton">+1</button>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <span id="TcvL1" >0</span>
-                    </td>
-                    <td class="borderLeft">
-                        <span id="TcvL2" >0</span>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight borderBottom">
-                        <button id="TminusL1" class="Jbutton">-1</button>
-                    </td>
-                    <td class="borderLeft borderBottom">
-                        <button id="TminusL2" class="Jbutton">-1</button>
-                    </td>    
-                </tr>
-                <tr>
-                    <td class="borderRight borderTop">
-                        <strong>L3</strong>
-                    </td>
-                    <td class="borderLeft borderTop">
-                        <strong>L4</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="TplusL3" class="Jbutton">+1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="TplusL4" class="Jbutton">+1</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <span id="TcvL3" >0</span>
-                    </td>
-                    <td class="borderLeft">
-                        <span id="TcvL4" >0</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="TminusL3" class="Jbutton">-1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="TminusL4" class="Jbutton">-1</button>
-                    </td>
-            </table>
-
-            <!-- ALGAE -->
-            <br>
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="2" class="borderBottom">
-                        <span class="header">Algae</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td class="borderRight borderTop">
-                        <strong>Net</strong>
-                    </td>
-                    <td class="borderLeft borderTop">
-                        <strong>Scrub</strong>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="TplusN" class="Jbutton">+1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="TplusS" class="Jbutton">+1</button>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <span id="TcvN" >0</span>
-                    </td>
-                    <td class="borderLeft">
-                        <span id="TcvS" >0</span>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight borderBottom">
-                        <button id="TminusN" class="Jbutton">-1</button>
-                    </td>
-                    <td class="borderLeft borderBottom">
-                        <button id="TminusS" class="Jbutton">-1</button>
-                    </td>    
-                </tr>
-                <tr>
-                    <td colspan="2" class="borderTop">
-                        <strong>Processor</strong>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button id="TplusP" class="Jbutton">+1</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <span id="TcvP" >0</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button id="TminusP" class="Jbutton">-1</button>
-                    </td>
-            </table>
-
-            <h2>End Game</h2>
-
-            <table class="tableNormal leftAlign" >
-                <tr>
-                    <th>
-                        <span class="header">Final Robot Status</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="status" id="statusNoBarge"> <label for="statusNoBarge">Not in barge area</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="status" id="statusParked"> <label for="statusParked">Parked (part of robot in barge area)</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="status" id="statusShallow"> <label for="statusShallow">Shallow climb (robot must be off the ground)</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="status" id="statusShallowFail"> <label for="statusShallowFail">Failed shallow climb (attempted high cage but not off the ground)</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="status" id="statusDeep"> <label for="statusDeep">Deep climb (robot is off the ground)</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="status" id="statusDeepFail"> <label for="statusDeepFail">Failed deep climb (attempted lower cage but not off the ground)</label>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table class="tableNormal leftAlign">
-                <tr>
-                    <th colspan="2">
-                        <span class="header">Coral Pickup</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="coralPickup" id="coralPickupFloor"> <label for="coralPickupFloor">Floor</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="coralPickup" id="coralPickupStation"> <label for="coralPickupStation">Station</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="coralPickup" id="coralPickupBoth"> <label for="coralPickupBoth">Both</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="coralPickup" id="coralPickupNone"> <label for="coralPickupNone">None</label>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table class="tableNormal leftAlign">
-                <tr>
-                    <th colspan="2">
-                        <span class="header">Algae Pickup</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="algaePickup" id="algaePickupFloor"> <label for="algaePickupFloor">Floor</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="algaePickup" id="algaePickupStation"> <label for="algaePickupStation">Station</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="algaePickup" id="algaePickupBoth"> <label for="algaePickupBoth">Both</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="algaePickup" id="algaePickupNone"> <label for="algaePickupNone">None</label>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="2">
-                        <span class="header">Attained Coopertition <!--tf is coopertition--> Point</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="coopertition" id="coopY"> <label for="coopY">Yes</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="coopertition" id="coopN"> <label for="coopN">No</label>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table class="tableNormal leftAlign">
-                <tr>
-                    <th>
-                        <span class="header">Driver Skill</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="skill" id="skillAver"> <label for="skillAver">Average</label>
-                    </td>
-                </tr>
+        <div class="containerInner centerWrap">
+            <h1 class="headerMain">Select Match and Scouting Seat</h1>
+            <form id="scoutingForm">
+                <table class="tableNormal">
                     <tr>
-                    <td>
-                        <input type="radio" name="skill" id="skillEffect"> <label for="skillEffect">Effective</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="skill" id="skillNoSure"> <label for="skillNoSure">Not Sure</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="skill" id="skillVeryEffect"> <label for="skillVeryEffect">Very Effective</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="skill" id="skillNoEffect"> <label for="skillNoEffect">Not Effective</label>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="2">
-                        <span class="header">Played Defense</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="defense" id="defenseY"> <label for="defenseY">Yes</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="defense" id="defenseN"> <label for="defenseN">No</label>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="3">
-                        <span class="header">Speed</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="speed" id="speedS"> <label for="speedS">Slow</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="speed" id="speed"> <label for="speed">Medium</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="speed" id="speedF"> <label for="speedF">Fast</label>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table class="tableNormal leftAlign">
-                <tr>
-                    <th>
-                        <span class="header">Robot Assessment</span>
-                    </th>
-                </tr>
-
-                <tr>
-                    <td>
-                        <input type="checkbox" name="assess" id="assessDie"> <label for="assessDie">Died / Immobile</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" name="assess" id="assessTippy"> <label for="assessTippy">Tippy (almost tipped over)</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" name="assess" id="assessTipped"> <label for="assessTipped">Tipped over</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" name="assess" id="assessDropCoral"> <label for="assessDropCoral">Dropped Coral (>2)</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" name="assess" id="assessDropAlgae"> <label for="assessDropAlgae">Dropped Algae (>2)</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" name="assess" id="assessTrap"> <label for="assessTrap">Had game pieces trapped in robot</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" name="assess" id="assessFlimsy"> <label for="assessFlimsy">Looks flimsy</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="checkbox" name="assess" id="assessSolid"> <label for="assessSolid">Solidly built</label>
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <table class="tableNormal">
-                <tr>
-                    <th>
-                        <span class="header">Notes</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <textarea id="notes"></textarea>
-                    </td>             
-                </tr>
-            </table>
-            <div class="centerWrap">
-                <button id="submit" class="Jbutton">Submit</button>
-            </div>
+                        <td>
+                            <strong>Name</strong>
+                        </td>
+                        <td>
+                            <input type="text" id="name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Match #:</strong>
+                        </td>
+                        <td>
+                            <input type="hidden" id="eventKey" value="2025miket"> <!-- Set your event key here -->
+                            <select id="matchNum">
+                                <!-- Options will be populated dynamically -->
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Scouting Seat:</strong>
+                        </td>
+                        <td>
+                            <select id="scoutingSeat">
+                                <option value="red1">Red 1</option>
+                                <option value="red2">Red 2</option>
+                                <option value="red3">Red 3</option>
+                                <option value="blue1">Blue 1</option>
+                                <option value="blue2">Blue 2</option>
+                                <option value="blue3">Blue 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <button type="submit" class="Jbutton">Go to Scouting Form</button>
+            </form>
+        </div>
     </div>
+    <script>
+        const apiKey = 'zu21V7xO4Yu9ny1QVq7HsrYIAEG0p015yi747MxvjUHw9Hk7de60VPxIRBA0gYRN'; // Replace with your actual API key
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const eventKey = document.getElementById('eventKey').value;
+            const matchNumSelect = document.getElementById('matchNum');
+
+            fetch(`https://www.thebluealliance.com/api/v3/event/${eventKey}/matches`, {
+                headers: {
+                    'X-TBA-Auth-Key': apiKey
+                }
+            })
+            .then(response => response.json())
+            .then(matches => {
+                matches
+                    .filter(match => match.comp_level === 'qm') // Only add qualification matches
+                    .sort((a, b) => a.match_number - b.match_number) // Sort matches by match number
+                    .forEach(match => {
+                        const option = document.createElement('option');
+                        option.value = match.key.split('_')[1]; // Extract match number
+                        option.textContent = match.match_number;
+                        matchNumSelect.appendChild(option);
+                    });
+            })
+            .catch(error => {
+                console.error('Error fetching matches:', error);
+            });
+        });
+
+        document.getElementById('scoutingForm').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const eventKey = document.getElementById('eventKey').value;
+            const matchNum = document.getElementById('matchNum').value;
+            const scoutingSeat = document.getElementById('scoutingSeat').value;
+            const name = document.getElementById('name').value;
+
+            fetch(`https://www.thebluealliance.com/api/v3/match/${eventKey}_${matchNum}`, {
+                headers: {
+                    'X-TBA-Auth-Key': apiKey
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                let teamNumber;
+                switch (scoutingSeat) {
+                    case 'red1':
+                        teamNumber = data.alliances.red.team_keys[0].replace('frc', '');
+                        break;
+                    case 'red2':
+                        teamNumber = data.alliances.red.team_keys[1].replace('frc', '');
+                        break;
+                    case 'red3':
+                        teamNumber = data.alliances.red.team_keys[2].replace('frc', '');
+                        break;
+                    case 'blue1':
+                        teamNumber = data.alliances.blue.team_keys[0].replace('frc', '');
+                        break;
+                    case 'blue2':
+                        teamNumber = data.alliances.blue.team_keys[1].replace('frc', '');
+                        break;
+                    case 'blue3':
+                        teamNumber = data.alliances.blue.team_keys[2].replace('frc', '');
+                        break;
+                }
+                window.location.href = `form?team=${teamNumber}&match=${matchNum}&name=${name}`;
+            })
+            .catch(error => {
+                console.error('Error fetching match data:', error);
+            });
+        });
+    </script>
 </body>
-<script>
-    window.addEventListener('load', () => {
-        const urlParams = new URLSearchParams(window.location.search);
-        const teamNumber = urlParams.get('team');
-        const matchNum = urlParams.get('match');
-        if (teamNumber) {
-            document.getElementById('team').value = teamNumber;
-        }
-        if (matchNum) {
-            document.getElementById('matchNum').value = matchNum;
-        }
-    });
-</script>
 </html>
