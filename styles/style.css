@@ -9,15 +9,16 @@
  * to this statement is automaticly triggered upon viewing a product actively utilizing this code. 
  */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  touch-action: manipulation;
+}
+
 body {
   margin: 0px;
   color: rgb(235, 235, 235);
   background-color: rgb(28, 28, 28);
   font-family: "Rubik";
 }
-* {
-      touch-action: manipulation;
-  }
 
 hr {
   filter: opacity(50%) brightness(40%);
@@ -116,7 +117,7 @@ input[type=checkbox] {
   border-radius: 10% !important;
 }
 
-input[type=number] {
+input[type=number], input[type=text] {
   background-color: black;
   border: 2px solid rgba(250, 250, 250, 0.5);
   color: white;
@@ -131,11 +132,11 @@ input[type=number] {
   overflow-y: hidden;
   overflow-x: scroll;
 }
-input[type=number]:hover {
+input[type=number]:hover, input[type=text]:hover {
   border-color: #14c600;
   color: #14c600;
 }
-input[type=number]:focus {
+input[type=number]:focus, input[type=text]:focus {
   outline: none;
 }
 
@@ -202,6 +203,26 @@ span[id^=cv], span[id^=Tcv] {
 .Jbutton:hover {
   border-color: #14c600;
   color: #14c600;
+}
+
+select {
+  background-color: black;
+  border: 2px solid rgba(250, 250, 250, 0.5);
+  color: white;
+  padding: 0.5em;
+  transition: all 0.6s cubic-bezier(0.06, 0.98, 0.41, 0.93);
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 0.5em 0;
+  border-radius: 0.5em;
+  display: inline-block;
+}
+select:hover {
+  border-color: #14c600;
+  color: #14c600;
+}
+select:focus {
+  outline: none;
 }
 
 #submit {
