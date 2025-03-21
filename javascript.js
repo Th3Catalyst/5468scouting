@@ -1,4 +1,4 @@
-console.log('working, api test v1.10');
+console.log('working, api test v1.11');
 document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
 
@@ -258,11 +258,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     submitButton.addEventListener("click", (event) => {
         const startPos = document.querySelector('input[name="startPos"]:checked');
-        const leavePos = document.querySelector('input[id="leaveY"]:checked') ? 1 : 0;
-        const barge = document.querySelector('input[id="statusParked"]:checked') ? 1 : 0;
-        const shallow = document.querySelector('input[id="statusShallow"]:checked') ? 1 : 0;
-        const deep = document.querySelector('input[id="statusDeep"]:checked') ? 1 : 0;
-        const finalStatus = document.querySelector('input[name="status"]:checked');
+        const leavePos = document.querySelector('input[name="leave"]:checked');
+        const barge = document.querySelector('input[name="status"]:checked');
         const coralPickup = document.querySelector('input[name="coralPickup"]:checked');
         const algaePickup = document.querySelector('input[name="algaePickup"]:checked');
         const coopertition = document.querySelector('input[name="coopertition"]:checked');
@@ -270,10 +267,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const defense = document.querySelector('input[name="defense"]:checked');
         const speed = document.querySelector('input[name="speed"]:checked');
         const notes = document.getElementById("notes").value;
-        const total = 3*leavePos 
-                    + 3*count1 + 4*count2 + 6*count3 + 7*count4 + 4*countN + 6*countP
-                    + 2*Tcount1 + 3*Tcount2 + 4*Tcount3 + 5*Tcount4 + 4*TcountN + 6*TcountP
-                    + 2*barge + 6*shallow + 12*deep;
+        const total = 3 * (leavePos ? 1 : 0)
+                    + 3 * count1 + 4 * count2 + 6 * count3 + 7 * count4 + 4 * countN + 6 * countP
+                    + 2 * Tcount1 + 3 * Tcount2 + 4 * Tcount3 + 5 * Tcount4 + 4 * TcountN + 6 * TcountP
+                    + (barge && barge.value === "Parked" ? 2 : 0)
+                    + (barge && barge.value === "Shallow" ? 6 : 0)
+                    + (barge && barge.value === "Deep" ? 12 : 0);
         console.log(total);
 
         const assessments = [];
@@ -285,30 +284,37 @@ document.addEventListener("DOMContentLoaded", (event) => {
             scoutName: scoutName,
             matchNum: matchNum,
             teamNumber: teamNumber,
-            counter1: count1 ? count1.value : null,
-            counter2: count2 ? count2.value : null,
-            counter3: count3 ? count3.value : null,
-            counter4: count4 ? count4.value : null,
-            counterN: countN ? countN.value : null,
-            counterS: countS ? countS.value : null,
-            counterP: countP ? countP.value : null,
-            startPos: startPos ? startPos.value : null,
-            leavePos: leavePos ? leavePos.value : null,
-            finalStatus: finalStatus ? finalStatus.value : null,
-            coralPickup: coralPickup ? coralPickup.value : null,
-            algaePickup: algaePickup ? algaePickup.value : null,
-            coopertition: coopertition ? coopertition.value : null,
-            driverSkill: driverSkill ? driverSkill.value : null,
-            defense: defense ? defense.value : null,
-            speed: speed ? speed.value : null,
+            startPos: startPos ? startPos.nextElementSibling.textContent : null,
+            leavePos: leavePos ? leavePos.nextElementSibling.textContent : null,
+            counter1: count1,
+            counter2: count2,
+            counter3: count3,
+            counter4: count4,
+            counterN: countN,
+            counterS: countS,
+            counterP: countP,
+            Tcounter1: Tcount1,
+            Tcounter2: Tcount2,
+            Tcounter3: Tcount3,
+            Tcounter4: Tcount4,
+            TcounterN: TcountN,
+            TcounterS: TcountS,
+            TcounterP: TcountP,
+            finalStatus: barge ? barge.nextElementSibling.textContent : null,
+            coralPickup: coralPickup ? coralPickup.nextElementSibling.textContent : null,
+            algaePickup: algaePickup ? algaePickup.nextElementSibling.textContent : null,
+            coopertition: coopertition ? coopertition.nextElementSibling.textContent : null,
+            driverSkill: driverSkill ? driverSkill.nextElementSibling.textContent : null,
+            defense: defense ? defense.nextElementSibling.textContent : null,
+            speed: speed ? speed.nextElementSibling.textContent : null,
             assessments: assessments.join(', '),
             notes: notes,
             total: total
         };
         const queryString = new URLSearchParams(data).toString();
 
-        fetch(`https://script.google.com/macros/s/AKfycbwJJMfuSC3685RxPM35RE7p-eeBKD46HjZOxv3LlQ_1Xn7eJGOh1YRQAgK4gD5K3tSjsg/exec?${queryString}`, {
-            method: 'GET',
+        fetch(`https://script.google.com/macros/s/AKfycbyftpgHjtuULEkMedTrSzINcb6vSgLAkeUu9gaFG0k7JPh-OpZGjFvhQ7KQmZnT28TrJw/exec?${queryString}`, {
+            method: 'POST',
             redirect: "follow",
             headers: {
                 'Content-Type': 'text/plain;charset=utf-8'
@@ -317,6 +323,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
+            window.location.assign(`/index.html`);
         })
         .catch((error) => {
             console.error('Error:', error);

@@ -587,17 +587,14 @@
     window.addEventListener('load', () => {
         const urlParams = new URLSearchParams(window.location.search);
         const teamNumber = urlParams.get('team');
-        let matchNum = urlParams.get('match');
-        console.log(matchNum); 
+        const matchNum = urlParams.get('match');
         const name = urlParams.get('name');
         if (teamNumber) {
             document.getElementById('team').value = teamNumber;
         }
         if (matchNum) {
-            document.getElementById('matchNumInput').value = matchNum.slice(2,matchNum.length);
-        } 
-           
+            document.getElementById('matchNumInput').value = matchNum;
+        }
     });
-    
 </script>
 </html>

@@ -27,7 +27,7 @@
                             <strong>Match #:</strong>
                         </td>
                         <td>
-                            <input type="hidden" id="eventKey" value="2025miket"> <!-- Set your event key here -->
+                            <input type="hidden" id="eventKey" value="2025mndu"> <!-- Set your event key here -->
                             <select id="matchNum">
                                 <!-- Options will be populated dynamically -->
                             </select>
@@ -73,7 +73,7 @@
                     .sort((a, b) => a.match_number - b.match_number) // Sort matches by match number
                     .forEach(match => {
                         const option = document.createElement('option');
-                        option.value = match.key.split('_')[1]; // Extract match number
+                        option.value = match.match_number; // Use match number directly
                         option.textContent = match.match_number;
                         matchNumSelect.appendChild(option);
                     });
@@ -90,7 +90,7 @@
             const scoutingSeat = document.getElementById('scoutingSeat').value;
             const name = document.getElementById('name').value;
 
-            fetch(`https://www.thebluealliance.com/api/v3/match/${eventKey}_${matchNum}`, {
+            fetch(`https://www.thebluealliance.com/api/v3/match/${eventKey}_qm${matchNum}`, {
                 headers: {
                     'X-TBA-Auth-Key': apiKey
                 }
