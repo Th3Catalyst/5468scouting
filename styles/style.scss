@@ -114,6 +114,12 @@ hr {
                 h2 {
                         @include header;
                         font-size: 2em;
+                        border-bottom: 2px solid $chaosGreen;
+                        border-top: 2px solid $chaosGreen;
+                        background-color: $chaosGreenDark;
+                        width: 90%;
+                        margin: 2em auto;
+                        padding: 0.5em;
                 }
         }
 }
