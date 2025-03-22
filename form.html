@@ -487,18 +487,52 @@
                         <input type="radio" name="defense" id="defenseN"> <label for="defenseN">No</label>
                     </td>
                 </tr>
-                <tr id="defenseEffectRow" style="display: none;">
-                    <td style="text-wrap: wrap; width: 50%;" colspan="2">
-                        How effective was it? (1-5 scale)
+            </table>
+            <table id="defenseTable" class="tableNormal leftAlign" style="display: none;">
+                <tr>
+                    <th>
+                        <span class="header">Defensive Skills</span>
+                    </th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="checkbox" name="dSkill" id="skillBlock"> <label for="skillBlock">Blocked access to coral station</label>
                     </td>
-                    <td colspan="2">
-                        <select id="defenseEffect" style="margin: 0;">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="dSkill" id="skillSlow"> <label for="skillSlow">Slowed high scoring team</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-wrap: wrap;">
+                        <input type="checkbox" name="dSkill" id="skillNoEffect"> <label for="skillNoEffect">Not effective at blocking station or slowing team down</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="dSkill" id="skillBroke"> <label for="skillBroke">Broke down</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="dSkill" id="skillAvoid"> <label for="skillAvoid">Avoided penalties</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="dSkill" id="skillPenalties"> <label for="skillPenalties">Lots of penalties</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="dSkill" id="skillStuckA"> <label for="skillStuckA">Stuck on algae</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="dSkill" id="skillStuckC"> <label for="skillStuckC">Stuck on coral</label>
                     </td>
                 </tr>
             </table>

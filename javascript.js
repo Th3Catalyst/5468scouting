@@ -251,11 +251,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
 
     document.getElementById('defenseY').addEventListener("click", () => {
-        document.getElementById("defenseEffectRow").style.display = "table-row";
+        document.getElementById("defenseTable").style.display = "table";
     });
 
     document.getElementById('defenseN').addEventListener("click", () => {
-        document.getElementById("defenseEffectRow").style.display = "none";
+        document.getElementById("defenseTable").style.display = "none";
     });
 
     // Read URL parameters
