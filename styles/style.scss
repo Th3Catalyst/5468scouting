@@ -227,6 +227,18 @@ span[id^=cv], span[id^=Tcv] { //ripoff RegEx
         display: inline-block !important; // Ensure buttons are inline-block
 }
 
+img {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        transition: $animationTransition1;
+        border: 0.2em solid $chaosGreen;
+        filter: $filterMain;
+        &:hover {
+                transform: scale(1.1);
+        }
+}
+
 select {
         @include elementDefault;
         font-size: 1.5em;
@@ -319,6 +331,9 @@ label { //more RegEx
                         max-width: 50vw;
                         font-size: 0.75em !important;
                 }
+        }
+        img {
+                width: 85vw;
         }
         .mobile {
                 display: block !important;
