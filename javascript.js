@@ -1,4 +1,4 @@
-console.log('working, api test v1.11');
+console.log('working, api test v1.12');
 document.addEventListener("DOMContentLoaded", (event) => {
     event.preventDefault();
 
@@ -265,7 +265,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const teamNumber = urlParams.get('team');
 
     submitButton.addEventListener("click", (event) => {
-        const startPos = document.querySelector('input[name="startPos"]:checked');
         const leavePos = document.querySelector('input[name="leave"]:checked');
         const barge = document.querySelector('input[name="status"]:checked');
         const coralPickup = document.querySelector('input[name="coralPickup"]:checked');
@@ -287,14 +286,17 @@ document.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll('input[name="assess"]:checked').forEach((checkbox) => {
             assessments.push(checkbox.id);
         });
-
+        const defenseAssess = [];
+        document.querySelectorAll('input[name="dSkill"]:checked').forEach((checkbox) => {
+            defenseAssess.push(checkbox.id);
+        });
+        console.log(defenseAssess)
         const data = {
             scoutName: scoutName,
             matchNum: matchNum,
             teamNumber: teamNumber,
-            startPos: startPos ? startPos.nextElementSibling.textContent : null,
             leavePos: leavePos ? leavePos.nextElementSibling.textContent : null,
-            counter1: count1,
+            counter1: count1,   
             counter2: count2,
             counter3: count3,
             counter4: count4,
@@ -314,6 +316,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             coopertition: coopertition ? coopertition.nextElementSibling.textContent : null,
             driverSkill: driverSkill ? driverSkill.nextElementSibling.textContent : null,
             defense: defense ? defense.nextElementSibling.textContent : null,
+            defenseAssess: defenseAssess.join(', '),
             speed: speed ? speed.nextElementSibling.textContent : null,
             assessments: assessments.join(', '),
             notes: notes,
