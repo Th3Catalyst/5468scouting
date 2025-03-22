@@ -475,16 +475,30 @@
             </table>
             <table class="tableNormal">
                 <tr>
-                    <th colspan="2">
+                    <th colspan="4">
                         <span class="header">Played Defense</span>
                     </th>
                 </tr>
                 <tr>
-                    <td>
+                    <td colspan="2" style="width: 50%;">
                         <input type="radio" name="defense" id="defenseY"> <label for="defenseY">Yes</label>
                     </td>
-                    <td>
+                    <td colspan="2">
                         <input type="radio" name="defense" id="defenseN"> <label for="defenseN">No</label>
+                    </td>
+                </tr>
+                <tr id="defenseEffectRow" style="display: none;">
+                    <td style="text-wrap: wrap; width: 50%;" colspan="2">
+                        How effective was it? (1-5 scale)
+                    </td>
+                    <td colspan="2">
+                        <select id="defenseEffect" style="margin: 0;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
                     </td>
                 </tr>
             </table>

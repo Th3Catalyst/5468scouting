@@ -250,6 +250,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
         TcounterDivP.textContent = TcountP;
     });
 
+    document.getElementById('defenseY').addEventListener("click", () => {
+        document.getElementById("defenseEffectRow").style.display = "table-row";
+    });
+
+    document.getElementById('defenseN').addEventListener("click", () => {
+        document.getElementById("defenseEffectRow").style.display = "none";
+    });
+
     // Read URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     const scoutName = urlParams.get('name');
