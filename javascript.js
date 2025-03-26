@@ -257,7 +257,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     document.getElementById('defenseN').addEventListener("click", () => {
         document.getElementById("defenseTable").style.display = "none";
     });
-
     // Read URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     const scoutName = urlParams.get('name');
@@ -274,6 +273,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const defense = document.querySelector('input[name="defense"]:checked');
         const speed = document.querySelector('input[name="speed"]:checked');
         const notes = document.getElementById("notes").value;
+        const rankPoints = document.getElementById("rankPoints").value;
         const total = 3 * (leavePos ? 1 : 0)
                     + 3 * count1 + 4 * count2 + 6 * count3 + 7 * count4 + 4 * countN + 6 * countP
                     + 2 * Tcount1 + 3 * Tcount2 + 4 * Tcount3 + 5 * Tcount4 + 4 * TcountN + 6 * TcountP
@@ -290,6 +290,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
         document.querySelectorAll('input[name="dSkill"]:checked').forEach((checkbox) => {
             defenseAssess.push(checkbox.id);
         });
+        if (assessments.length === 0) {
+            assessments.push("null");
+        }
+        if (defenseAssess.length === 0) {
+            defenseAssess.push("null");
+        }
         console.log(defenseAssess)
         const data = {
             scoutName: scoutName,
@@ -319,12 +325,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
             defenseAssess: defenseAssess.join(', '),
             speed: speed ? speed.nextElementSibling.textContent : null,
             assessments: assessments.join(', '),
+            rankPoints: rankPoints,
             notes: notes,
             total: total
         };
         const queryString = new URLSearchParams(data).toString();
 
-        fetch(`https://script.google.com/macros/s/AKfycbyftpgHjtuULEkMedTrSzINcb6vSgLAkeUu9gaFG0k7JPh-OpZGjFvhQ7KQmZnT28TrJw/exec?${queryString}`, {
+        fetch(`https://script.google.com/macros/s/AKfycbxVHzRTKlHYtv6NH-cxt1enxMt0Uh5kgwhkDYIocSDmhaLwbr69Tstb5Qv0mxFisWlVFw/exec?${queryString}`, {
             method: 'POST',
             redirect: "follow",
             headers: {
