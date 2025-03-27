@@ -357,16 +357,10 @@ label {
   border-top: 0.25em solid #14c600 !important;
 }
 
-.auto #container .containerInner h2 {
-  text-align: center;
-  text-shadow: 2px 2px 8px rgba(61, 61, 61, 0.5), -2px 2px 8px rgba(61, 61, 61, 0.5), 2px -2px 8px rgba(61, 61, 61, 0.5), -2px -2px 8px rgba(61, 61, 61, 0.5);
-  font-size: 2em;
-  border-bottom: 2px solid #14c600;
-  border-top: 2px solid #14c600;
-  background-color: rgba(20, 198, 0, 0.1882352941);
-  width: 90%;
-  margin: 2em auto;
-  padding: 0.5em;
+.auto h2 {
+  border-bottom: 2px solid #14c600 !important;
+  border-top: 2px solid #14c600 !important;
+  background-color: rgba(20, 198, 0, 0.1882352941) !important;
 }
 
 .teleop *:is(table,img) {
@@ -388,16 +382,10 @@ label {
   border-top: 0.25em solid #0014c6 !important;
 }
 
-.teleop #container .containerInner h2 {
-  text-align: center;
-  text-shadow: 2px 2px 8px rgba(61, 61, 61, 0.5), -2px 2px 8px rgba(61, 61, 61, 0.5), 2px -2px 8px rgba(61, 61, 61, 0.5), -2px -2px 8px rgba(61, 61, 61, 0.5);
-  font-size: 2em;
-  border-bottom: 2px solid #0014c6;
-  border-top: 2px solid #0014c6;
-  background-color: rgba(0, 20, 198, 0.1882352941);
-  width: 90%;
-  margin: 2em auto;
-  padding: 0.5em;
+.teleop h2 {
+  border-bottom: 2px solid #0014c6 !important;
+  border-top: 2px solid #0014c6 !important;
+  background-color: rgba(0, 20, 198, 0.1882352941) !important;
 }
 
 .endgame *:is(table,img) {
@@ -419,15 +407,9 @@ label {
   border-top: 0.25em solid #c60014 !important;
 }
 
-.endgame #container .containerInner h2 {
-  text-align: center;
-  text-shadow: 2px 2px 8px rgba(61, 61, 61, 0.5), -2px 2px 8px rgba(61, 61, 61, 0.5), 2px -2px 8px rgba(61, 61, 61, 0.5), -2px -2px 8px rgba(61, 61, 61, 0.5);
-  font-size: 2em;
-  border-bottom: 2px solid #c60014;
-  border-top: 2px solid #c60014;
-  background-color: rgba(198, 0, 20, 0.1882352941);
-  width: 90%;
-  margin: 2em auto;
-  padding: 0.5em;
+.endgame h2 {
+  border-bottom: 2px solid #c60014 !important;
+  border-top: 2px solid #c60014 !important;
+  background-color: rgba(198, 0, 20, 0.1882352941) !important;
 }
 
