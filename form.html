@@ -32,156 +32,159 @@
                 </tr>
             </table>
             <h2>Auto Phase</h2>
-
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="2">
-                        <span class="header">Did robot leave starting position?</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="radio" name="leave" id="leaveY" value="Yes"> <label for="leaveY">Yes</label>
-                    </td>
-                    <td>
-                        <input type="radio" name="leave" id="leaveN" value="No"> <label for="leaveN">No</label>
-                    </td>
-                </tr>
-            </table>
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="2" class="borderBottom">
-                        <span class="header">Coral</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td class="borderRight borderTop">
-                        <strong>L4</strong>
-                    </td>
-                    <td class="borderLeft borderTop">
-                        <strong>L3</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="plusL4" class="Jbutton">+1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="plusL3" class="Jbutton">+1</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <span id="cvL4" >0</span>
-                    </td>
-                    <td class="borderLeft">
-                        <span id="cvL3" >0</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight borderBottom">
-                        <button id="minusL4" class="Jbutton">-1</button>
-                    </td>
-                    <td class="borderLeft borderBottom">
-                        <button id="minusL3" class="Jbutton">-1</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight borderTop">
-                        <strong>L2</strong>
-                    </td>
-                    <td class="borderLeft borderTop">
-                        <strong>L1/Trough</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="plusL2" class="Jbutton">+1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="plusL1" class="Jbutton">+1</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <span id="cvL2" >0</span>
-                    </td>
-                    <td class="borderLeft">
-                        <span id="cvL1" >0</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="borderRight borderBottom">
-                        <button id="minusL2" class="Jbutton">-1</button>
-                    </td>
-                    <td class="borderLeft borderBottom">
-                        <button id="minusL1" class="Jbutton">-1</button>
-                    </td>
-            </table>
-            <!-- ALGAE -->
-            <table class="tableNormal">
-                <tr>
-                    <th colspan="2" class="borderBottom">
-                        <span class="header">Algae</span>
-                    </th>
-                </tr>
-                <tr>
-                    <td class="borderRight borderTop">
-                        <strong>Net</strong>
-                    </td>
-                    <td class="borderLeft borderTop">
-                        <strong>Scrub</strong>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <button id="plusN" class="Jbutton">+1</button>
-                    </td>
-                    <td class="borderLeft">
-                        <button id="plusS" class="Jbutton">+1</button>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight">
-                        <span id="cvN" >0</span>
-                    </td>
-                    <td class="borderLeft">
-                        <span id="cvS" >0</span>
-                    </td>
-                    
-                </tr>
-                <tr>
-                    <td class="borderRight borderBottom">
-                        <button id="minusN" class="Jbutton">-1</button>
-                    </td>
-                    <td class="borderLeft borderBottom">
-                        <button id="minusS" class="Jbutton">-1</button>
-                    </td>    
-                </tr>
-                <tr>
-                    <td colspan="2" class="borderTop">
-                        <strong>Processor</strong>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button id="plusP" class="Jbutton">+1</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <span id="cvP" >0</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <button id="minusP" class="Jbutton">-1</button>
-                    </td>
-            </table>
+            
+            <div class="auto">
+                <table class="tableNormal">
+                    <tr>
+                        <th colspan="2">
+                            <span class="header">Did robot leave starting position?</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="leave" id="leaveY" value="Yes"> <label for="leaveY">Yes</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="leave" id="leaveN" value="No"> <label for="leaveN">No</label>
+                        </td>
+                    </tr>
+                </table>
+                <table class="tableNormal">
+                    <tr>
+                        <th colspan="2" class="borderBottom">
+                            <span class="header">Coral</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="borderRight borderTop">
+                            <strong>L4</strong>
+                        </td>
+                        <td class="borderLeft borderTop">
+                            <strong>L3</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borderRight">
+                            <button id="plusL4" class="Jbutton">+1</button>
+                        </td>
+                        <td class="borderLeft">
+                            <button id="plusL3" class="Jbutton">+1</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borderRight">
+                            <span id="cvL4" >0</span>
+                        </td>
+                        <td class="borderLeft">
+                            <span id="cvL3" >0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borderRight borderBottom">
+                            <button id="minusL4" class="Jbutton">-1</button>
+                        </td>
+                        <td class="borderLeft borderBottom">
+                            <button id="minusL3" class="Jbutton">-1</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borderRight borderTop">
+                            <strong>L2</strong>
+                        </td>
+                        <td class="borderLeft borderTop">
+                            <strong>L1/Trough</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borderRight">
+                            <button id="plusL2" class="Jbutton">+1</button>
+                        </td>
+                        <td class="borderLeft">
+                            <button id="plusL1" class="Jbutton">+1</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borderRight">
+                            <span id="cvL2" >0</span>
+                        </td>
+                        <td class="borderLeft">
+                            <span id="cvL1" >0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="borderRight borderBottom">
+                            <button id="minusL2" class="Jbutton">-1</button>
+                        </td>
+                        <td class="borderLeft borderBottom">
+                            <button id="minusL1" class="Jbutton">-1</button>
+                        </td>
+                </table>
+                <!-- ALGAE -->
+                <table class="tableNormal">
+                    <tr>
+                        <th colspan="2" class="borderBottom">
+                            <span class="header">Algae</span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="borderRight borderTop">
+                            <strong>Net</strong>
+                        </td>
+                        <td class="borderLeft borderTop">
+                            <strong>Scrub</strong>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="borderRight">
+                            <button id="plusN" class="Jbutton">+1</button>
+                        </td>
+                        <td class="borderLeft">
+                            <button id="plusS" class="Jbutton">+1</button>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="borderRight">
+                            <span id="cvN" >0</span>
+                        </td>
+                        <td class="borderLeft">
+                            <span id="cvS" >0</span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="borderRight borderBottom">
+                            <button id="minusN" class="Jbutton">-1</button>
+                        </td>
+                        <td class="borderLeft borderBottom">
+                            <button id="minusS" class="Jbutton">-1</button>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="borderTop">
+                            <strong>Processor</strong>
+                        </td>
+    
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button id="plusP" class="Jbutton">+1</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <span id="cvP" >0</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button id="minusP" class="Jbutton">-1</button>
+                        </td>
+                </table>
+            </div>
             <h2>Teleop</h2>
+            <div class="teleop">
             <table class="tableNormal">
                 <tr>
                     <th colspan="2" class="borderBottom">
@@ -316,9 +319,10 @@
                         <button id="TminusP" class="Jbutton">-1</button>
                     </td>
             </table>
-
+            </div>
+            
             <h2>End Game</h2>
-
+            <div class="endgame">
             <img src="/images/IMG_6898.png" alt="End Game">
             <table class="tableNormal leftAlign" >
                 <tr>
@@ -612,6 +616,7 @@
             </table>
             <div class="centerWrap">
                 <button id="submit" class="Jbutton">Submit</button>
+            </div>
             </div>
     </div>
 </body>
