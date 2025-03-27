@@ -334,8 +334,11 @@ label {
   position: fixed;
   top: 0;
   left: 0;
-  border: 0.25em solid #14c600 !important;
+  border-bottom: 0.25em solid #14c600 !important;
   background-color: rgb(28,28,28);
+  height:1.5em;
+  width:100%;
+  font-size:1.3em;
 }
 
 .auto *:is(table,img) {
