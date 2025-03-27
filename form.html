@@ -10,12 +10,13 @@
 </head>
 <body>
     <div id="top-bar">
-        <span id="test1" style="position:relative; left: 0;">Match #1</span>
-        <span id="test2" style="position:fixed; right: 0;">Team: 5468</span>
+        <span id="matchNumInput" style="position:relative; left: 0;">Match #1</span>
+        <span id="team" style="position:fixed; right: 0;">Team: 5468</span>
     </div>
     <div id="container">
         <div class="containerInner">
             <h1 class="headerMain">5468 Scouting Form 2025</h1>
+            <!-- WILL REMOVE LATER
             <hr>
             <table class="tableNormal">
                 <tr>
@@ -35,7 +36,7 @@
                     </td>
                 </tr>
             </table>
-            
+            -->
             
             <div class="auto">
                 <h2>Auto Phase</h2>
@@ -635,10 +636,10 @@
         const matchNum = urlParams.get('match');
         const name = urlParams.get('name');
         if (teamNumber) {
-            document.getElementById('team').value = teamNumber;
+            document.getElementById('team').value = "Team: " + teamNumber;
         }
         if (matchNum) {
-            document.getElementById('matchNumInput').value = matchNum;
+            document.getElementById('matchNumInput').value = "Match #" + matchNum;
         }
     });
 </script>
