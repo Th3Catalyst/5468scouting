@@ -270,19 +270,19 @@ label {
 }
 
 .borderLeft {
-  border-left: 0.25em solid #14c600 !important;
+  border-left: 0.25em solid #14c600;
 }
 
 .borderRight {
-  border-right: 0.25em solid #14c600 !important;
+  border-right: 0.25em solid #14c600;
 }
 
 .borderBottom {
-  border-bottom: 0.25em solid #14c600 !important;
+  border-bottom: 0.25em solid #14c600;
 }
 
 .borderTop {
-  border-top: 0.25em solid #14c600 !important;
+  border-top: 0.25em solid #14c600;
 }
 
 :is(.borderLeft, .borderRight, .borderBottom, .borderTop):hover {
@@ -325,3 +325,65 @@ label {
     pointer-events: none !important;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+
+/*ADD THE BELOW TO THE .SCSS*/
+
+.auto *:is(table,img) {
+  border-color: #14c600 !important;
+}
+.auto .borderLeft {
+  border-left: 0.25em solid #14c600 !important;
+}
+
+.auto .borderRight {
+  border-right: 0.25em solid #14c600 !important;
+}
+
+.auto .borderBottom {
+  border-bottom: 0.25em solid #14c600 !important;
+}
+
+.auto .borderTop {
+  border-top: 0.25em solid #14c600 !important;
+}
+
+.teleop *:is(table,img) {
+  border-color: #0014c6 !important;
+}
+.teleop .borderLeft {
+  border-left: 0.25em solid #0014c6 !important;
+}
+
+.teleop .borderRight {
+  border-right: 0.25em solid #0014c6 !important;
+}
+
+.teleop .borderBottom {
+  border-bottom: 0.25em solid #0014c6 !important;
+}
+
+.teleop .borderTop {
+  border-top: 0.25em solid #0014c6 !important;
+}
+
+.endgame *:is(table,img) {
+  border-color: #c60014 !important;
+}
+.endgame .borderLeft {
+  border-left: 0.25em solid #c60014 !important;
+}
+
+.endgame .borderRight {
+  border-right: 0.25em solid #c60014 !important;
+}
+
+.endgame .borderBottom {
+  border-bottom: 0.25em solid #c60014 !important;
+}
+
+.endgame .borderTop {
+  border-top: 0.25em solid #c60014 !important;
+}
+
