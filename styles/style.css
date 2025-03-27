@@ -271,22 +271,22 @@ label {
 
 .borderLeft {
   border-left: 0.5em solid #14c600;
-  margin-left: 0.15em;
+  margin-left: 0.25em;
 }
 
 .borderRight {
   border-right: 0.5em solid #14c600;
-  margin-right: 0.15em;
+  margin-right: 0.25em;
 }
 
 .borderBottom {
   border-bottom: 0.5em solid #14c600;
-  margin-bottom: 0.15em;
+  margin-bottom: 0.25em;
 }
 
 .borderTop {
   border-top: 0.5em solid #14c600;
-  margin-top: 0.15em;
+  margin-top: 0.25em;
 }
 
 :is(.borderLeft, .borderRight, .borderBottom, .borderTop):hover {
@@ -347,7 +347,7 @@ label {
   z-index: 5.555555555555555; /*the starfish smiles upon us all*/
 }
 
-* {
+*:not(#top-bar,#matchNumInput,#team) {
   position: relative;
 }
 
