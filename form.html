@@ -10,8 +10,8 @@
 </head>
 <body>
     <div id="top-bar">
-        <span id="matchNumInput" style="position:relative; left: 0;">Match #1</span>
-        <span id="team" style="position:fixed; right: 0;">Team: 5468</span>
+        <span id="matchNumInput" style="position:relative; left: 3;">ERROR</span>
+        <span id="team" style="position:fixed; right: 3;">STOP BREAKING THINGS</span>
     </div>
     <div id="container">
         <div class="containerInner">
@@ -636,10 +636,10 @@
         const matchNum = urlParams.get('match');
         const name = urlParams.get('name');
         if (teamNumber) {
-            document.getElementById('team').value = "Team: " + teamNumber;
+            document.getElementById('team').innerHTML = "Team: " + teamNumber;
         }
         if (matchNum) {
-            document.getElementById('matchNumInput').value = "Match #" + matchNum;
+            document.getElementById('matchNumInput').innerHTML = "Match #" + matchNum;
         }
     });
 </script>
