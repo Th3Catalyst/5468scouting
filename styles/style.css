@@ -271,7 +271,7 @@ label {
 
 .borderLeft {
   border-left: 0.5em solid #14c600;
-  margin-left: 0.25em;
+  margin-left: 2em;
 }
 
 .borderRight {
@@ -349,6 +349,7 @@ label {
 
 *:not(#top-bar,#matchNumInput,#team) {
   position: relative;
+  z-index: -1;
 }
 
 .auto *:is(table,img) {
