@@ -271,18 +271,22 @@ label {
 
 .borderLeft {
   border-left: 0.5em solid #14c600;
+  margin-left: 0.15em;
 }
 
 .borderRight {
   border-right: 0.5em solid #14c600;
+  margin-right: 0.15em;
 }
 
 .borderBottom {
   border-bottom: 0.5em solid #14c600;
+  margin-bottom: 0.15em;
 }
 
 .borderTop {
   border-top: 0.5em solid #14c600;
+  margin-top: 0.15em;
 }
 
 :is(.borderLeft, .borderRight, .borderBottom, .borderTop):hover {
@@ -329,7 +333,7 @@ label {
 
 
 /*ADD THE BELOW TO THE .SCSS*/
-/*ALSO: cv and Tcv text size, +/- button size, */
+/*ALSO: cv and Tcv text size, +/- button size, border changes*/
 
 #top-bar {
   position: fixed;
